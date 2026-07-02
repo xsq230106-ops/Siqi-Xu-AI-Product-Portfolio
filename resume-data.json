@@ -1,93 +1,202 @@
 {
   "name": {
     "en": "Siqi Xu",
-    "zh": "徐思琪"
+    "zh": "徐思齐"
   },
-  "email": "siqi.xu@example.com",
+  "email": "xsq230106@gmail.com",
+  "phone": "+852 84955212",
   "school": {
-    "en": "University of Hong Kong",
-    "zh": "香港大学"
+    "en": "Lingnan University (Hong Kong)",
+    "zh": "香港岭南大学"
   },
   "job_target": {
-    "en": "AI Product Manager / NLP Engineer",
-    "zh": "AI 产品经理 / NLP 工程师"
+    "en": "Data Scientist / AI Product Analyst",
+    "zh": "数据科学家 / AI 产品分析师"
   },
   "job_tagline": {
-    "en": "Looking for opportunities in AI product & NLP roles",
-    "zh": "寻求 AI 产品与 NLP 方向的机会"
+    "en": "Statistics & AI background | Seeking data-driven product & analysis roles",
+    "zh": "统计与AI背景 | 寻求数据驱动产品与分析方向机会"
   },
   "about": {
-    "en": "Passionate about bridging AI technology and product design. Experienced in building AI-powered products from concept to launch, with a focus on user-facing applications in NLP and conversational AI.",
-    "zh": "热衷于连接 AI 技术与产品设计，拥有从概念到发布的全流程 AI 产品构建经验，专注于 NLP 与对话式 AI 的用户端应用。"
+    "en": "Interdisciplinary background in statistics and data analytics with hands-on experience in AI/ML projects including fraud detection, multimodal content moderation, and computer vision. Proven ability to lead technical teams, design end-to-end data pipelines, and deliver actionable insights. Passionate about bridging data science with AI product development.",
+    "zh": "具备统计与数据分析的复合学科背景，在欺诈检测、多模态内容审核和计算机视觉等 AI/ML 项目中拥有实战经验。能够主导技术团队、设计端到端数据管道并交付可落地分析洞察。热衷于连接数据科学与 AI 产品开发。"
   },
-  "education": {
-    "degree": {
-      "en": "B.Eng in Computer Science & AI",
-      "zh": "计算机科学与人工智能 工学士"
+  "education": [
+    {
+      "school": {
+        "en": "Lingnan University (Hong Kong)",
+        "zh": "香港岭南大学"
+      },
+      "degree": {
+        "en": "M.S. in Cross-disciplinary Technologies+ (MScCT+)",
+        "zh": "融合科技理学硕士（MScCT+）"
+      },
+      "period": {
+        "en": "2025 – 2026",
+        "zh": "2025 – 2026"
+      },
+      "detail": {
+        "en": "Wu Jieh Yee School of Interdisciplinary Studies — Statistics and Data Analytics Track",
+        "zh": "统计与数据分析方向"
+      }
     },
-    "period": {
-      "en": "2020 – 2024",
-      "zh": "2020 – 2024"
+    {
+      "school": {
+        "en": "Changsha University of Science and Technology",
+        "zh": "长沙理工大学"
+      },
+      "degree": {
+        "en": "Bachelor of Science (Applied Statistics)",
+        "zh": "理学学士（应用统计学）"
+      },
+      "period": {
+        "en": "2019 – 2023",
+        "zh": "2019 – 2023"
+      },
+      "detail": {
+        "en": "School of Mathematics & Statistics",
+        "zh": "数学与统计学院"
+      }
     }
-  },
+  ],
   "projects": [
     {
       "title": {
-        "en": "AI Interview Coach",
-        "zh": "AI 面试助手"
+        "en": "Credit Card Fraud Detection",
+        "zh": "信用卡欺诈检测"
       },
       "description": {
-        "en": "Built an AI-powered mock interview platform with real-time speech recognition and feedback generation.",
-        "zh": "构建了 AI 驱动的模拟面试平台，支持实时语音识别与反馈生成。"
+        "en": "Applied SMOTE oversampling on highly imbalanced data (0.17% fraud) and compared Logistic Regression vs Random Forest — improved recall from 0.55 to 0.94. Optimized classification threshold via Precision-Recall curve. Designed multi-model risk control framework with three-tier disposition (auto-approve / secondary review / auto-block).",
+        "zh": "针对极度不平衡数据（欺诈仅占0.17%）采用SMOTE过采样，对比逻辑回归与随机森林，将召回率从0.55提升至0.94。基于Precision-Recall曲线优化分类阈值。设计多模型协同风控框架及三级处置机制（自动放行/二次验证/自动拦截）。"
       },
-      "skills": ["NLP", "Speech Recognition", "React"],
-      "link": ""
+      "skills": [
+        "Python",
+        "Scikit-learn",
+        "SMOTE",
+        "Logistic Regression",
+        "Random Forest"
+      ],
+      "link": "",
+      "role": {
+        "en": "Team Leader",
+        "zh": "项目组长"
+      }
     },
     {
       "title": {
-        "en": "Smart Meeting Notes",
-        "zh": "智能会议笔记"
+        "en": "Artificial Intelligence Systems for Automatic Content Review",
+        "zh": "人工智能自动内容审核系统"
       },
       "description": {
-        "en": "Developed a meeting transcription and summarization tool using LLM fine-tuning and speaker diarization.",
-        "zh": "利用 LLM 微调与说话人分离技术，开发了会议转录与摘要工具。"
+        "en": "Designed a multimodal fusion pipeline with BERT text encoder and ResNet image encoder, using confidence-based weighting for cross-modal risk detection. Built dynamic user risk profiles enabling three-tier review. Implemented explainable output with human-in-the-loop feedback.",
+        "zh": "设计基于BERT文本编码器与ResNet图像编码器的多模态融合检测框架，通过置信度融合加权识别跨模态隐蔽恶意内容。构建动态用户风险画像实现三级差异化审核机制。引入可解释输出与人机协同闭环。"
       },
-      "skills": ["LLM", "Fine-tuning", "Python"],
-      "link": ""
+      "skills": [
+        "PyTorch",
+        "BERT",
+        "ResNet",
+        "Multimodal AI",
+        "Python"
+      ],
+      "link": "",
+      "role": {
+        "en": "Team Member",
+        "zh": "项目成员"
+      }
     },
     {
       "title": {
-        "en": "Sentiment Analytics Dashboard",
-        "zh": "情感分析仪表盘"
+        "en": "License Plate Detection (YOLOv11 + EasyOCR)",
+        "zh": "车牌检测系统（YOLOv11 + EasyOCR）"
       },
       "description": {
-        "en": "Designed a real-time sentiment analysis dashboard for social media monitoring with interactive visualizations.",
-        "zh": "设计了社交媒体实时情感分析仪表盘，支持交互式数据可视化。"
+        "en": "Built end-to-end pipeline: video input → YOLOv11 detection → grayscale/contrast enhancement → EasyOCR recognition → annotated output. Converted PASCAL VOC annotations to YOLO format. Achieved detection mAP 0.89 and recognition accuracy > 92%.",
+        "zh": "实现\"视频输入→YOLO预处理→车牌定位→字符分割→OCR识别→结果输出\"端到端流程。将PASCAL VOC格式标注转换为YOLO格式。系统达成检测mAP 0.89、识别准确率>92%。"
       },
-      "skills": ["Data Analytics", "Visualization", "React"],
-      "link": ""
+      "skills": [
+        "YOLOv11",
+        "EasyOCR",
+        "Python",
+        "OpenCV",
+        "Computer Vision"
+      ],
+      "link": "",
+      "role": {
+        "en": "Team Member",
+        "zh": "项目成员"
+      }
     }
   ],
   "skills": [
-    { "key": "skill_pm", "label": { "en": "Product Management", "zh": "产品管理" } },
-    { "key": "skill_nlp", "label": { "en": "NLP / LLM", "zh": "NLP / 大语言模型" } },
-    { "key": "skill_python", "label": { "en": "Python", "zh": "Python" } },
-    { "key": "skill_ml", "label": { "en": "Machine Learning", "zh": "机器学习" } },
-    { "key": "skill_react", "label": { "en": "React / Next.js", "zh": "React / Next.js" } },
-    { "key": "skill_data", "label": { "en": "Data Analytics", "zh": "数据分析" } },
-    { "key": "skill_cloud", "label": { "en": "Cloud Deployment", "zh": "云部署" } },
-    { "key": "skill_uiux", "label": { "en": "UI/UX Design", "zh": "UI/UX 设计" } }
+    {
+      "key": "skill_python",
+      "label": {
+        "en": "Python / Data Analysis",
+        "zh": "Python / 数据分析"
+      }
+    },
+    {
+      "key": "skill_ml",
+      "label": {
+        "en": "Machine Learning",
+        "zh": "机器学习"
+      }
+    },
+    {
+      "key": "skill_deep",
+      "label": {
+        "en": "Deep Learning",
+        "zh": "深度学习"
+      }
+    },
+    {
+      "key": "skill_stats",
+      "label": {
+        "en": "Statistics & Modeling",
+        "zh": "统计与建模"
+      }
+    },
+    {
+      "key": "skill_sql",
+      "label": {
+        "en": "SQL / Databases",
+        "zh": "SQL / 数据库"
+      }
+    },
+    {
+      "key": "skill_pm",
+      "label": {
+        "en": "Project Management",
+        "zh": "项目管理"
+      }
+    },
+    {
+      "key": "skill_ai",
+      "label": {
+        "en": "AI Tools (Deepseek, Gemini, Cursor, Codex)",
+        "zh": "AI 工具（Deepseek、Gemini、Cursor）"
+      }
+    },
+    {
+      "key": "skill_r",
+      "label": {
+        "en": "R / MATLAB / SPSS",
+        "zh": "R / MATLAB / SPSS"
+      }
+    }
   ],
   "researchInterests": {
     "en": [
-      "Retrieval-Augmented Generation for domain-specific QA",
-      "Efficient fine-tuning of small language models",
-      "Human-AI interaction design patterns"
+      "Fraud detection & anomaly detection in financial data",
+      "Multimodal AI for content safety and moderation",
+      "Computer vision for intelligent surveillance systems",
+      "Human-in-the-loop AI decision systems"
     ],
     "zh": [
-      "面向特定领域问答的检索增强生成",
-      "小型语言模型的高效微调",
-      "人机交互设计模式研究"
+      "金融数据中的欺诈检测与异常检测",
+      "多模态AI内容安全与审核",
+      "计算机视觉智能监控系统",
+      "人机协同AI决策系统"
     ]
   }
 }

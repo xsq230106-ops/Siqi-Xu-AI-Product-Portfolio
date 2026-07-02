@@ -78,11 +78,10 @@ export default function Home() {
           />
         </div>
 
-        {/* Right Panel */}
         <RightPanel locale={locale} />
       </div>
 
-      {/* Mobile: compact profile bar + overlay trigger */}
+      {/* Mobile compact profile bar */}
       <div className="lg:hidden border-b border-slate-200 bg-white px-4 py-3">
         <div className="flex items-center gap-3">
           <div className="w-10 h-10 rounded-full bg-slate-200 shrink-0 overflow-hidden">
@@ -114,7 +113,7 @@ export default function Home() {
         <LangToggle locale={locale} onToggle={setLocale} />
       </div>
 
-      {/* Mobile: full-screen resume overlay */}
+      {/* Mobile overlay */}
       {mobileOverlayOpen && (
         <div className="fixed inset-0 z-50 bg-white lg:hidden overflow-y-auto">
           <div className="sticky top-0 bg-white border-b border-slate-200 px-4 py-3 flex items-center justify-between z-10">
@@ -134,13 +133,14 @@ export default function Home() {
   );
 }
 
-/* ---- Document-style resume content (shared) ---- */
+/* ---- Mobile overlay resume content ---- */
 function MobileResumeContent({ locale }: { locale: Locale }) {
   const R = (obj: Record<string, string> | undefined) =>
     obj ? obj[locale] ?? "" : "";
 
   return (
     <div className="max-w-xl mx-auto space-y-7">
+      {/* About */}
       <section>
         <h2 className="text-xs font-semibold uppercase tracking-widest text-slate-400 mb-3">
           {locale === "en" ? "About" : "个人简介"}
@@ -150,19 +150,28 @@ function MobileResumeContent({ locale }: { locale: Locale }) {
 
       <hr className="border-slate-200" />
 
+      {/* Education (array) */}
       <section>
         <h2 className="text-xs font-semibold uppercase tracking-widest text-slate-400 mb-3">
           {locale === "en" ? "Education" : "教育背景"}
         </h2>
-        <div className="text-sm">
-          <p className="font-medium text-slate-900">{R(data.education.degree)}</p>
-          <p className="text-slate-500 mt-0.5">{R(data.education.period)}</p>
-          <p className="text-slate-500">{R(data.school)}</p>
+        <div className="text-sm space-y-3">
+          {data.education.map((e: any, i: number) => (
+            <div key={i}>
+              <p className="font-medium text-slate-900">{R(e.degree)}</p>
+              <p className="text-slate-500 mt-0.5">{R(e.school)}</p>
+              <p className="text-slate-500">{R(e.period)}</p>
+              {R(e.detail) && (
+                <p className="text-xs text-slate-400 mt-0.5">{R(e.detail)}</p>
+              )}
+            </div>
+          ))}
         </div>
       </section>
 
       <hr className="border-slate-200" />
 
+      {/* Projects */}
       <section>
         <h2 className="text-xs font-semibold uppercase tracking-widest text-slate-400 mb-3">
           {locale === "en" ? "Projects" : "项目经验"}
@@ -170,7 +179,12 @@ function MobileResumeContent({ locale }: { locale: Locale }) {
         <div className="space-y-4">
           {data.projects.map((p: any, i: number) => (
             <div key={i}>
-              <h3 className="text-sm font-medium text-slate-900">{R(p.title)}</h3>
+              <div className="flex items-baseline gap-2">
+                <h3 className="text-sm font-medium text-slate-900">{R(p.title)}</h3>
+                {p.role && (
+                  <span className="text-[11px] text-slate-400">({R(p.role)})</span>
+                )}
+              </div>
               <p className="text-sm text-slate-600 mt-1 leading-relaxed">{R(p.description)}</p>
               {p.skills?.length > 0 && (
                 <div className="flex flex-wrap gap-1.5 mt-2">
@@ -188,6 +202,7 @@ function MobileResumeContent({ locale }: { locale: Locale }) {
 
       <hr className="border-slate-200" />
 
+      {/* Skills */}
       <section>
         <h2 className="text-xs font-semibold uppercase tracking-widest text-slate-400 mb-3">
           {locale === "en" ? "Skills" : "专业技能"}
@@ -203,6 +218,7 @@ function MobileResumeContent({ locale }: { locale: Locale }) {
 
       <hr className="border-slate-200" />
 
+      {/* Research */}
       <section>
         <h2 className="text-xs font-semibold uppercase tracking-widest text-slate-400 mb-3">
           {locale === "en" ? "Research Interests" : "研究兴趣"}
@@ -216,15 +232,19 @@ function MobileResumeContent({ locale }: { locale: Locale }) {
 
       <hr className="border-slate-200" />
 
+      {/* Contact */}
       <section>
         <h2 className="text-xs font-semibold uppercase tracking-widest text-slate-400 mb-3">
           {locale === "en" ? "Contact" : "联系方式"}
         </h2>
-        <p className="text-sm text-slate-700">{data.email}</p>
+        <div className="text-sm text-slate-700 space-y-1">
+          <p>{data.email}</p>
+          <p>{data.phone}</p>
+        </div>
         <p className="text-xs text-slate-400 mt-1">
           {locale === "en"
-            ? "Feel free to reach out via email. Open to full-time and internship opportunities."
-            : "欢迎通过邮箱联系。对全职与实习机会均持开放态度。"}
+            ? "Open to full-time and internship opportunities."
+            : "对全职与实习机会均持开放态度。"}
         </p>
       </section>
     </div>

@@ -17,9 +17,8 @@ export default function LeftPanel({ locale, isExpanded, onDragStart }: Props) {
 
   return (
     <div className="h-full bg-white border-r border-slate-200 overflow-y-auto relative">
-      {/* Content */}
       <div className="p-6 lg:p-8">
-        {/* Compact profile rail — always visible */}
+        {/* Compact profile rail */}
         <div className="flex flex-col items-center lg:items-start gap-4">
           <div className="w-20 h-20 rounded-full bg-slate-200 flex items-center justify-center text-slate-400 overflow-hidden shrink-0">
             <svg viewBox="0 0 80 80" fill="none" className="w-full h-full">
@@ -28,15 +27,14 @@ export default function LeftPanel({ locale, isExpanded, onDragStart }: Props) {
               <path d="M18 66c0-12.15 9.85-22 22-22s22 9.85 22 22" fill="#94a3b8" />
             </svg>
           </div>
-
           <div className="text-center lg:text-left">
             <h1 className="text-xl font-semibold text-slate-900">{R(data.name)}</h1>
             <p className="text-sm text-slate-500 mt-0.5">{data.email}</p>
-            <p className="text-sm text-slate-500">{R(data.school)}</p>
+            <p className="text-sm text-slate-500">{data.phone}</p>
           </div>
         </div>
 
-        {/* Job target highlight */}
+        {/* Job target */}
         <div className="mt-5 p-3 bg-blue-50 border border-blue-100 rounded-lg">
           <p className="text-sm font-medium text-blue-800">{R(data.job_target)}</p>
           <p className="text-xs text-blue-600 mt-0.5">{R(data.job_tagline)}</p>
@@ -59,7 +57,7 @@ export default function LeftPanel({ locale, isExpanded, onDragStart }: Props) {
           </div>
         </div>
 
-        {/* Expanded: document-style resume */}
+        {/* Expanded document-style resume */}
         {isExpanded && (
           <>
             <hr className="border-slate-200 my-6" />
@@ -75,15 +73,22 @@ export default function LeftPanel({ locale, isExpanded, onDragStart }: Props) {
 
               <hr className="border-slate-200" />
 
-              {/* Education */}
+              {/* Education (array) */}
               <section>
                 <h2 className="text-xs font-semibold uppercase tracking-widest text-slate-400 mb-2">
                   {locale === "en" ? "Education" : "教育背景"}
                 </h2>
-                <div className="text-sm">
-                  <p className="font-medium text-slate-900">{R(data.education.degree)}</p>
-                  <p className="text-slate-500 mt-0.5">{R(data.education.period)}</p>
-                  <p className="text-slate-500">{R(data.school)}</p>
+                <div className="text-sm space-y-3">
+                  {data.education.map((e: any, i: number) => (
+                    <div key={i}>
+                      <p className="font-medium text-slate-900">{R(e.degree)}</p>
+                      <p className="text-slate-500 mt-0.5">{R(e.school)}</p>
+                      <p className="text-slate-500">{R(e.period)}</p>
+                      {R(e.detail) && (
+                        <p className="text-xs text-slate-400 mt-0.5">{R(e.detail)}</p>
+                      )}
+                    </div>
+                  ))}
                 </div>
               </section>
 
@@ -97,7 +102,12 @@ export default function LeftPanel({ locale, isExpanded, onDragStart }: Props) {
                 <div className="space-y-3">
                   {data.projects.map((p: any, i: number) => (
                     <div key={i}>
-                      <h3 className="text-sm font-medium text-slate-900">{R(p.title)}</h3>
+                      <div className="flex items-baseline gap-2">
+                        <h3 className="text-sm font-medium text-slate-900">{R(p.title)}</h3>
+                        {p.role && (
+                          <span className="text-[11px] text-slate-400">({R(p.role)})</span>
+                        )}
+                      </div>
                       <p className="text-sm text-slate-600 mt-0.5 leading-relaxed">
                         {R(p.description)}
                       </p>
@@ -158,11 +168,14 @@ export default function LeftPanel({ locale, isExpanded, onDragStart }: Props) {
                 <h2 className="text-xs font-semibold uppercase tracking-widest text-slate-400 mb-2">
                   {locale === "en" ? "Contact" : "联系方式"}
                 </h2>
-                <p className="text-sm text-slate-700">{data.email}</p>
+                <div className="text-sm text-slate-700 space-y-1">
+                  <p>{data.email}</p>
+                  <p>{data.phone}</p>
+                </div>
                 <p className="text-xs text-slate-400 mt-1">
                   {locale === "en"
-                    ? "Feel free to reach out via email. Open to full-time and internship opportunities."
-                    : "欢迎通过邮箱联系。对全职与实习机会均持开放态度。"}
+                    ? "Open to full-time and internship opportunities."
+                    : "对全职与实习机会均持开放态度。"}
                 </p>
               </section>
             </div>
@@ -170,7 +183,7 @@ export default function LeftPanel({ locale, isExpanded, onDragStart }: Props) {
         )}
       </div>
 
-      {/* Drag handle on right edge */}
+      {/* Drag handle */}
       <div
         className="absolute right-0 top-0 bottom-0 w-2 cursor-col-resize z-10 flex flex-col items-center justify-center group"
         onMouseDown={onDragStart}
