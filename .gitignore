@@ -1,0 +1,60 @@
+# —— Dependencies ——
+node_modules/
+
+# —— Next.js build output ——
+.next/
+out/
+
+# —— Bundler / build output ——
+dist/
+build/
+
+# —— Environment & secrets ——
+.env
+.env.*
+!.env.example
+
+# —— Credentials & keys ——
+*.pem
+*.p12
+*.key
+
+# —— Logs ——
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# —— OS junk ——
+.DS_Store
+Thumbs.db
+
+# —— Editor/IDE (unless you explicitly share settings) ——
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# —— Python artifacts (in case of scripts) ——
+__pycache__/
+*.pyc
+
+# —— Local databases ——
+*.db
+*.sqlite
+*.sqlite3
+
+# —— TypeScript incremental ——
+*.tsbuildinfo
+
+# —— Vercel ——
+.vercel/
+
+# —— Test coverage ——
+coverage/
+
+# —— Misc temp ——
+.cache/
+tmp/
+*.tmp
