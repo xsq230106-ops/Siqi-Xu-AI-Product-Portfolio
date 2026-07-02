@@ -1,0 +1,93 @@
+{
+  "name": {
+    "en": "Siqi Xu",
+    "zh": "徐思琪"
+  },
+  "email": "siqi.xu@example.com",
+  "school": {
+    "en": "University of Hong Kong",
+    "zh": "香港大学"
+  },
+  "job_target": {
+    "en": "AI Product Manager / NLP Engineer",
+    "zh": "AI 产品经理 / NLP 工程师"
+  },
+  "job_tagline": {
+    "en": "Looking for opportunities in AI product & NLP roles",
+    "zh": "寻求 AI 产品与 NLP 方向的机会"
+  },
+  "about": {
+    "en": "Passionate about bridging AI technology and product design. Experienced in building AI-powered products from concept to launch, with a focus on user-facing applications in NLP and conversational AI.",
+    "zh": "热衷于连接 AI 技术与产品设计，拥有从概念到发布的全流程 AI 产品构建经验，专注于 NLP 与对话式 AI 的用户端应用。"
+  },
+  "education": {
+    "degree": {
+      "en": "B.Eng in Computer Science & AI",
+      "zh": "计算机科学与人工智能 工学士"
+    },
+    "period": {
+      "en": "2020 – 2024",
+      "zh": "2020 – 2024"
+    }
+  },
+  "projects": [
+    {
+      "title": {
+        "en": "AI Interview Coach",
+        "zh": "AI 面试助手"
+      },
+      "description": {
+        "en": "Built an AI-powered mock interview platform with real-time speech recognition and feedback generation.",
+        "zh": "构建了 AI 驱动的模拟面试平台，支持实时语音识别与反馈生成。"
+      },
+      "skills": ["NLP", "Speech Recognition", "React"],
+      "link": ""
+    },
+    {
+      "title": {
+        "en": "Smart Meeting Notes",
+        "zh": "智能会议笔记"
+      },
+      "description": {
+        "en": "Developed a meeting transcription and summarization tool using LLM fine-tuning and speaker diarization.",
+        "zh": "利用 LLM 微调与说话人分离技术，开发了会议转录与摘要工具。"
+      },
+      "skills": ["LLM", "Fine-tuning", "Python"],
+      "link": ""
+    },
+    {
+      "title": {
+        "en": "Sentiment Analytics Dashboard",
+        "zh": "情感分析仪表盘"
+      },
+      "description": {
+        "en": "Designed a real-time sentiment analysis dashboard for social media monitoring with interactive visualizations.",
+        "zh": "设计了社交媒体实时情感分析仪表盘，支持交互式数据可视化。"
+      },
+      "skills": ["Data Analytics", "Visualization", "React"],
+      "link": ""
+    }
+  ],
+  "skills": [
+    { "key": "skill_pm", "label": { "en": "Product Management", "zh": "产品管理" } },
+    { "key": "skill_nlp", "label": { "en": "NLP / LLM", "zh": "NLP / 大语言模型" } },
+    { "key": "skill_python", "label": { "en": "Python", "zh": "Python" } },
+    { "key": "skill_ml", "label": { "en": "Machine Learning", "zh": "机器学习" } },
+    { "key": "skill_react", "label": { "en": "React / Next.js", "zh": "React / Next.js" } },
+    { "key": "skill_data", "label": { "en": "Data Analytics", "zh": "数据分析" } },
+    { "key": "skill_cloud", "label": { "en": "Cloud Deployment", "zh": "云部署" } },
+    { "key": "skill_uiux", "label": { "en": "UI/UX Design", "zh": "UI/UX 设计" } }
+  ],
+  "researchInterests": {
+    "en": [
+      "Retrieval-Augmented Generation for domain-specific QA",
+      "Efficient fine-tuning of small language models",
+      "Human-AI interaction design patterns"
+    ],
+    "zh": [
+      "面向特定领域问答的检索增强生成",
+      "小型语言模型的高效微调",
+      "人机交互设计模式研究"
+    ]
+  }
+}
