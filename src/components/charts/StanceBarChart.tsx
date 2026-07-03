@@ -2,6 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import * as echarts from "echarts";
+import { useTheme } from "@/components/ThemeProvider";
 
 interface StanceItem {
   label: string;
@@ -14,19 +15,21 @@ interface Props {
 
 export default function StanceBarChart({ data }: Props) {
   const ref = useRef<HTMLDivElement>(null);
+  const { theme } = useTheme();
+  const isDark = theme === "dark";
   const instance = useRef<any>(null);
 
   useEffect(() => {
     if (!ref.current) return;
 
-    if (!instance.current) {
-      instance.current = echarts.init(ref.current, undefined, { renderer: "canvas" });
-    }
+    instance.current?.dispose();
+      instance.current = echarts.init(ref.current, isDark ? "dark" : undefined, { renderer: "canvas" });
 
     const labels = data.map((d) => d.label);
     const values = data.map((d) => d.percentage);
 
     instance.current.setOption({
+      backgroundColor: "transparent",
       tooltip: {
         trigger: "axis",
         axisPointer: { type: "shadow" },
@@ -81,7 +84,7 @@ export default function StanceBarChart({ data }: Props) {
     const onResize = () => instance.current?.resize();
     window.addEventListener("resize", onResize);
     return () => window.removeEventListener("resize", onResize);
-  }, [data]);
+  }, [data, isDark]);
 
   return <div ref={ref} className="w-full h-[150px]" />;
 }

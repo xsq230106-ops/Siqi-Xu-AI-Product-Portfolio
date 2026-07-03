@@ -4,6 +4,7 @@ import { useState, useCallback, useEffect, useRef } from "react";
 import type { Locale } from "@/i18n/dictionary";
 import { t } from "@/i18n/dictionary";
 import LangToggle from "@/components/LangToggle";
+import ThemeToggle from "@/components/ThemeToggle";
 import LeftPanel from "@/components/LeftPanel";
 import RightPanel from "@/components/RightPanel";
 import resumeData from "../../resume-data.json";
@@ -58,12 +59,15 @@ export default function HomePage({ locale }: { locale: Locale }) {
 
   return (
     <div className="min-h-screen flex flex-col bg-stone-50 text-slate-800 font-sans antialiased">
-      {/* Mobile top bar */}
-      <header className="lg:hidden flex items-center justify-between px-4 py-3 bg-white border-b border-slate-200">
-        <span className="text-sm font-medium text-slate-700">
+      {/* Top bar */}
+      <header className="flex items-center justify-between px-4 lg:px-6 py-2 bg-white dark:bg-stone-900 border-b border-slate-200 dark:border-stone-700 shrink-0">
+        <span className="text-sm font-medium text-slate-700 dark:text-stone-300">
           Siqi Xu — AI Product Portfolio
         </span>
-        <LangToggle locale={locale} />
+        <div className="flex items-center gap-1.5">
+          <ThemeToggle />
+          <LangToggle locale={locale} />
+        </div>
       </header>
 
       <div className="flex flex-1 flex-col lg:flex-row">
@@ -87,7 +91,7 @@ export default function HomePage({ locale }: { locale: Locale }) {
       </div>
 
       {/* Mobile: compact profile bar */}
-      <div className="lg:hidden border-b border-slate-200 bg-white px-4 py-3">
+      <div className="lg:hidden border-b border-slate-200 dark:border-stone-700 bg-white dark:bg-stone-900 px-4 py-3">
         <div className="flex items-center gap-3">
           <div className="w-10 h-10 overflow-hidden shrink-0 bg-slate-100">
             <img src="/avatar.jpg" alt="Siqi Xu" className="w-full h-full object-cover object-top" />
@@ -109,21 +113,18 @@ export default function HomePage({ locale }: { locale: Locale }) {
         </div>
       </div>
 
-      {/* Desktop lang toggle */}
-      <div className="hidden lg:block fixed top-4 right-4 z-20">
-        <LangToggle locale={locale} />
-      </div>
+
 
       {/* Mobile overlay */}
       {mobileOverlayOpen && (
-        <div className="fixed inset-0 z-50 bg-white lg:hidden overflow-y-auto">
-          <div className="sticky top-0 bg-white border-b border-slate-200 px-4 py-3 flex items-center justify-between z-10">
-            <span className="text-sm font-semibold text-slate-800">
+        <div className="fixed inset-0 z-50 bg-white dark:bg-stone-900 lg:hidden overflow-y-auto">
+          <div className="sticky top-0 bg-white dark:bg-stone-900 border-b border-slate-200 dark:border-stone-700 px-4 py-3 flex items-center justify-between z-10">
+            <span className="text-sm font-semibold text-slate-800 dark:text-stone-100">
               {T("resume")}
             </span>
             <button
               onClick={() => setMobileOverlayOpen(false)}
-              className="p-1.5 text-slate-400 hover:text-slate-600"
+              className="p-1.5 text-slate-400 dark:text-stone-400 hover:text-slate-600 dark:hover:text-stone-300"
             >
               <svg
                 className="w-5 h-5"
@@ -157,14 +158,14 @@ function MobileResumeContent({ locale }: { locale: Locale }) {
   return (
     <div className="max-w-xl mx-auto space-y-7">
       <section>
-        <h2 className="text-xs font-semibold uppercase tracking-widest text-slate-400 mb-3">
+        <h2 className="text-xs font-semibold uppercase tracking-widest text-slate-400 dark:text-stone-400 mb-3">
           {T("about")}
         </h2>
         <p className="text-sm text-slate-700 leading-relaxed">{R(data.about)}</p>
       </section>
-      <hr className="border-slate-200" />
+      <hr className="border-slate-200 dark:border-stone-700" />
       <section>
-        <h2 className="text-xs font-semibold uppercase tracking-widest text-slate-400 mb-3">
+        <h2 className="text-xs font-semibold uppercase tracking-widest text-slate-400 dark:text-stone-400 mb-3">
           {T("education")}
         </h2>
         <div className="text-sm space-y-3">
@@ -174,15 +175,15 @@ function MobileResumeContent({ locale }: { locale: Locale }) {
               <p className="text-slate-500 mt-0.5">{R(e.school)}</p>
               <p className="text-slate-500">{R(e.period)}</p>
               {R(e.detail) && (
-                <p className="text-xs text-slate-400 mt-0.5">{R(e.detail)}</p>
+                <p className="text-xs text-slate-400 dark:text-stone-400 mt-0.5">{R(e.detail)}</p>
               )}
             </div>
           ))}
         </div>
       </section>
-      <hr className="border-slate-200" />
+      <hr className="border-slate-200 dark:border-stone-700" />
       <section>
-        <h2 className="text-xs font-semibold uppercase tracking-widest text-slate-400 mb-3">
+        <h2 className="text-xs font-semibold uppercase tracking-widest text-slate-400 dark:text-stone-400 mb-3">
           {T("projects")}
         </h2>
         <div className="space-y-4">
@@ -191,7 +192,7 @@ function MobileResumeContent({ locale }: { locale: Locale }) {
               <div className="flex items-baseline gap-2">
                 <h3 className="text-sm font-medium text-slate-900">{R(p.title)}</h3>
                 {p.role && (
-                  <span className="text-[11px] text-slate-400">({R(p.role)})</span>
+                  <span className="text-[11px] text-slate-400 dark:text-stone-400">({R(p.role)})</span>
                 )}
               </div>
               <p className="text-sm text-slate-600 mt-1 leading-relaxed">
@@ -202,7 +203,7 @@ function MobileResumeContent({ locale }: { locale: Locale }) {
                   {p.skills.map((s: string) => (
                     <span
                       key={s}
-                      className="text-[11px] text-slate-400 border border-slate-200 px-1.5 py-0.5 rounded"
+                      className="text-[11px] text-slate-400 dark:text-stone-400 border border-slate-200 dark:border-stone-600 px-1.5 py-0.5 rounded"
                     >
                       {s}
                     </span>
@@ -213,25 +214,25 @@ function MobileResumeContent({ locale }: { locale: Locale }) {
           ))}
         </div>
       </section>
-      <hr className="border-slate-200" />
+      <hr className="border-slate-200 dark:border-stone-700" />
       <section>
-        <h2 className="text-xs font-semibold uppercase tracking-widest text-slate-400 mb-3">
+        <h2 className="text-xs font-semibold uppercase tracking-widest text-slate-400 dark:text-stone-400 mb-3">
           {T("skills")}
         </h2>
         <div className="flex flex-wrap gap-1.5">
           {data.skills.map((s: any) => (
             <span
               key={s.key}
-              className="text-xs text-slate-500 border border-slate-200 px-2 py-0.5 rounded"
+              className="text-xs text-slate-500 dark:text-stone-400 border border-slate-200 dark:border-stone-600 px-2 py-0.5 rounded"
             >
               {R(s.label)}
             </span>
           ))}
         </div>
       </section>
-      <hr className="border-slate-200" />
+      <hr className="border-slate-200 dark:border-stone-700" />
       <section>
-        <h2 className="text-xs font-semibold uppercase tracking-widest text-slate-400 mb-3">
+        <h2 className="text-xs font-semibold uppercase tracking-widest text-slate-400 dark:text-stone-400 mb-3">
           {T("research")}
         </h2>
         <ul className="list-disc list-inside text-sm text-slate-600 space-y-1">
@@ -240,9 +241,9 @@ function MobileResumeContent({ locale }: { locale: Locale }) {
           ))}
         </ul>
       </section>
-      <hr className="border-slate-200" />
+      <hr className="border-slate-200 dark:border-stone-700" />
       <section>
-        <h2 className="text-xs font-semibold uppercase tracking-widest text-slate-400 mb-3">
+        <h2 className="text-xs font-semibold uppercase tracking-widest text-slate-400 dark:text-stone-400 mb-3">
           {T("contact")}
         </h2>
         <div className="text-sm text-slate-700 space-y-1">
@@ -261,7 +262,7 @@ function MobileResumeContent({ locale }: { locale: Locale }) {
               </a>
             )}
         </div>
-        <p className="text-xs text-slate-400 mt-1">{T("contact_note")}</p>
+        <p className="text-xs text-slate-400 dark:text-stone-400 mt-1">{T("contact_note")}</p>
       </section>
     </div>
   );

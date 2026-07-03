@@ -3,6 +3,7 @@
 import { useEffect, useRef } from "react";
 import * as echarts from "echarts";
 import type { Locale } from "@/i18n/dictionary";
+import { useTheme } from "@/components/ThemeProvider";
 
 interface Props {
   positive: number;
@@ -18,14 +19,15 @@ export default function SentimentPieChart({
   locale,
 }: Props) {
   const ref = useRef<HTMLDivElement>(null);
+  const { theme } = useTheme();
+  const isDark = theme === "dark";
   const instance = useRef<any>(null);
 
   useEffect(() => {
     if (!ref.current) return;
 
-    if (!instance.current) {
-      instance.current = echarts.init(ref.current, undefined, { renderer: "canvas" });
-    }
+    instance.current?.dispose();
+      instance.current = echarts.init(ref.current, isDark ? "dark" : undefined, { renderer: "canvas" });
 
     const labels =
       locale === "en"
@@ -33,6 +35,7 @@ export default function SentimentPieChart({
         : { pos: "正面", neu: "中性", neg: "负面" };
 
     instance.current.setOption({
+      backgroundColor: "transparent",
       tooltip: {
         trigger: "item",
         formatter: (p: any) => `${p.name}: ${p.value}%`,
@@ -82,7 +85,7 @@ export default function SentimentPieChart({
     const onResize = () => instance.current?.resize();
     window.addEventListener("resize", onResize);
     return () => window.removeEventListener("resize", onResize);
-  }, [positive, neutral, negative, locale]);
+  }, [positive, neutral, negative, locale, isDark]);
 
   return <div ref={ref} className="w-full h-[220px]" />;
 }

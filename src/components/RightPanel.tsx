@@ -61,13 +61,13 @@ function ListView({
 
   return (
     <main className="flex-1 overflow-y-auto">
-      <div className="sticky top-0 z-10 bg-stone-50/80 backdrop-blur-sm border-b border-slate-200 px-6 lg:px-10 py-4">
+      <div className="sticky top-0 z-10 bg-stone-50/80 dark:bg-stone-950/80 backdrop-blur-sm border-b border-slate-200 dark:border-stone-700 px-6 lg:px-10 py-4">
         <div className="flex items-center justify-between">
           <div>
-            <h2 className="text-lg font-semibold text-slate-800">
+            <h2 className="text-lg font-semibold text-slate-800 dark:text-stone-200">
               {T("today_topic")}
             </h2>
-            <p className="text-xs text-slate-400 mt-0.5">
+            <p className="text-xs text-slate-400 dark:text-stone-400 mt-0.5">
               {T("today_topic_zh")}
             </p>
           </div>
@@ -79,21 +79,21 @@ function ListView({
           <button
             key={topic.id}
             onClick={() => onSelect(topic)}
-            className="w-full text-left bg-white border border-slate-200 rounded-lg p-5 hover:border-slate-300 hover:shadow-sm transition-all group cursor-pointer"
+            className="w-full text-left bg-white dark:bg-stone-900 border border-slate-200 dark:border-stone-700 rounded-lg p-5 hover:border-slate-300 dark:hover:border-stone-600 hover:shadow-sm transition-all group cursor-pointer"
           >
             <div className="flex items-start justify-between gap-4">
               <div className="flex-1 min-w-0">
-                <h3 className="text-base font-semibold text-slate-900 leading-snug group-hover:text-blue-700 transition-colors">
+                <h3 className="text-base font-semibold text-slate-900 dark:text-stone-100 leading-snug group-hover:text-blue-700 transition-colors">
                   {R(topic.title)}
                 </h3>
-                <p className="text-sm text-slate-600 mt-2 leading-relaxed line-clamp-2">
+                <p className="text-sm text-slate-600 dark:text-stone-400 mt-2 leading-relaxed line-clamp-2">
                   {R(topic.summary)}
                 </p>
                 <div className="flex flex-wrap items-center gap-2 mt-3">
                   {topic.tags.map((tag) => (
                     <span
                       key={tag}
-                      className="inline-block px-2 py-0.5 text-[11px] font-medium bg-stone-100 text-slate-500 rounded"
+                      className="inline-block px-2 py-0.5 text-[11px] font-medium bg-stone-100 dark:bg-stone-800 text-slate-500 dark:text-stone-400 rounded"
                     >
                       {tag}
                     </span>
@@ -118,7 +118,7 @@ function ListView({
       </div>
 
       <div className="px-6 lg:px-10 pb-8">
-        <p className="text-xs text-slate-400 text-center">
+        <p className="text-xs text-slate-400 dark:text-stone-400 text-center">
           {Td("footer_list")}
         </p>
       </div>
@@ -143,10 +143,10 @@ function DetailView({
 
   return (
     <main className="flex-1 overflow-y-auto">
-      <div className="sticky top-0 z-10 bg-stone-50/80 backdrop-blur-sm border-b border-slate-200">
+      <div className="sticky top-0 z-10 bg-stone-50/80 dark:bg-stone-950/80 backdrop-blur-sm border-b border-slate-200 dark:border-stone-700">
         <button
           onClick={onBack}
-          className="flex items-center gap-1.5 px-6 lg:px-10 py-3 text-sm text-slate-500 hover:text-slate-700 transition-colors"
+          className="flex items-center gap-1.5 px-6 lg:px-10 py-3 text-sm text-slate-500 dark:text-stone-400 hover:text-slate-700 transition-colors"
         >
           <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
             <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
@@ -157,18 +157,18 @@ function DetailView({
 
       <div className="px-6 lg:px-10 py-6 max-w-3xl">
         {/* Title + meta */}
-        <h1 className="text-xl font-semibold text-slate-900 leading-snug">
+        <h1 className="text-xl font-semibold text-slate-900 dark:text-stone-100 leading-snug">
           {R(hotspot.title)}
         </h1>
         <div className="flex flex-wrap items-center gap-3 mt-2">
-          <span className="text-xs text-slate-400">{hotspot.date}</span>
+          <span className="text-xs text-slate-400 dark:text-stone-400">{hotspot.date}</span>
           <span className="text-xs text-slate-300">·</span>
-          <span className="text-xs text-slate-400">{hotspot.source.name}</span>
+          <span className="text-xs text-slate-400 dark:text-stone-400">{hotspot.source.name}</span>
           <div className="flex flex-wrap gap-1.5 ml-0 lg:ml-2">
             {hotspot.tags.map((tag) => (
               <span
                 key={tag}
-                className="inline-block px-2 py-0.5 text-[11px] font-medium bg-stone-100 text-slate-500 rounded"
+                className="inline-block px-2 py-0.5 text-[11px] font-medium bg-stone-100 dark:bg-stone-800 text-slate-500 dark:text-stone-400 rounded"
               >
                 {tag}
               </span>
@@ -177,11 +177,11 @@ function DetailView({
         </div>
 
         {/* Full description */}
-        <p className="text-sm text-slate-700 leading-relaxed mt-6">
+        <p className="text-sm text-slate-700 dark:text-stone-300 leading-relaxed mt-6">
           {R(hotspot.fullDescription)}
         </p>
 
-        <hr className="border-slate-200 my-6" />
+        <hr className="border-slate-200 dark:border-stone-700 my-6" />
 
         {/* Sentiment — ECharts pie chart */}
         <section className="mb-6">
@@ -209,7 +209,7 @@ function DetailView({
           />
         </section>
 
-        <hr className="border-slate-200 my-6" />
+        <hr className="border-slate-200 dark:border-stone-700 my-6" />
 
         {/* Keywords */}
         <section className="mb-6">
@@ -220,7 +220,7 @@ function DetailView({
             {hotspot.keywords.map((k) => (
               <span
                 key={k.word}
-                className="inline-block text-slate-600 border border-slate-200 px-2.5 py-1 rounded transition-colors hover:border-slate-300"
+                className="inline-block text-slate-600 border border-slate-200 dark:border-stone-600 px-2.5 py-1 rounded transition-colors hover:border-slate-300 dark:hover:border-stone-500"
                 style={{
                   fontSize: `${Math.max(11, Math.min(15, k.weight / 7))}px`,
                 }}
@@ -231,7 +231,7 @@ function DetailView({
           </div>
         </section>
 
-        <hr className="border-slate-200 my-6" />
+        <hr className="border-slate-200 dark:border-stone-700 my-6" />
 
         {/* Evidence */}
         <section className="mb-6">
@@ -242,12 +242,12 @@ function DetailView({
             {hotspot.evidence.map((e, i) => (
               <blockquote
                 key={i}
-                className="border-l-2 border-slate-300 pl-4 py-1"
+                className="border-l-2 border-slate-300 dark:border-stone-600 pl-4 py-1"
               >
-                <p className="text-sm text-slate-600 leading-relaxed">
+                <p className="text-sm text-slate-600 dark:text-stone-400 leading-relaxed">
                   &ldquo;{R(e.text)}&rdquo;
                 </p>
-                <cite className="text-xs text-slate-400 mt-1 block not-italic">
+                <cite className="text-xs text-slate-400 dark:text-stone-400 mt-1 block not-italic">
                   &mdash; {e.source}
                 </cite>
               </blockquote>
@@ -255,19 +255,19 @@ function DetailView({
           </div>
         </section>
 
-        <hr className="border-slate-200 my-6" />
+        <hr className="border-slate-200 dark:border-stone-700 my-6" />
 
         {/* Methodology */}
         <section className="mb-6">
           <h2 className="text-xs font-semibold uppercase tracking-widest text-slate-400 mb-3">
             {Td("methodology")}
           </h2>
-          <p className="text-sm text-slate-600 leading-relaxed">
+          <p className="text-sm text-slate-600 dark:text-stone-400 leading-relaxed">
             {R(hotspot.methodology)}
           </p>
         </section>
 
-        <p className="text-xs text-slate-400 text-center pt-4">
+        <p className="text-xs text-slate-400 dark:text-stone-400 text-center pt-4">
           {Td("footer_note")}
         </p>
       </div>
