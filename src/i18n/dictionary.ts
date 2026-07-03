@@ -1,16 +1,3 @@
-export type Locale = "en" | "zh";
-
-export const dictionary: Record<Locale, Record<string, string>> = {
-  en: {
-    "today_topic": "Today's Topic Lab",
-    "today_topic_zh": "今日热点观察",
-  },
-  zh: {
-    "today_topic": "今日热点观察",
-    "today_topic_zh": "今日热点观察",
-  },
-};
- 
- export function t(key: string, locale: Locale): string {
-   return dictionary[locale][key] ?? key;
- }
+// Re-export from the new JSON-based i18n module.
+// All existing imports of { t, type Locale } from "@/i18n/dictionary" continue to work.
+export { t, type Locale } from "@/lib/i18n";

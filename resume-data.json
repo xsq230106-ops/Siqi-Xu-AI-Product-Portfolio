@@ -3,8 +3,14 @@
     "en": "Siqi Xu",
     "zh": "徐思齐"
   },
-  "email": "xsq230106@gmail.com",
-  "phone": "+852 84955212",
+  "email": {
+    "en": "xsq230106@gmail.com",
+    "zh": "x-sq@qq.com"
+  },
+  "phone": {
+    "en": "+852 84955212",
+    "zh": "+86 139 2842 7506"
+  },
   "school": {
     "en": "Lingnan University (Hong Kong)",
     "zh": "香港岭南大学"
@@ -198,5 +204,10 @@
       "计算机视觉智能监控系统",
       "人机协同AI决策系统"
     ]
+  },
+  "social": {
+    "linkedin": "",
+    "github": "",
+    "email_url": "mailto:xsq230106@gmail.com"
   }
 }

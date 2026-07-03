@@ -1,166 +1,473 @@
 [
   {
-    "id": 1,
     "title": {
-      "en": "Apple Intelligence Goes Public",
-      "zh": "Apple Intelligence 正式上线"
+      "en": "Ask HN: Is anyone experimenting with different ways of using LLMs for coding?",
+      "zh": "问HN：有人在尝试用不同方式使用LLM进行编程吗？"
     },
     "summary": {
-      "en": "Apple rolls out its on-device AI suite with privacy-first LLM inference, integrated across iOS, iPadOS, and macOS.",
-      "zh": "Apple 正式推出设备端 AI 套件，以隐私优先的大模型推理为核心，覆盖 iOS、iPadOS 与 macOS。"
+      "en": "A Hacker News user expresses frustration with current LLM coding tools like Claude Code and Codex, feeling they disrupt flow state due to the prompt-response loop. They seek fundamentally different approaches, suggesting a tab completion model might be better. The post invites discussion on startups and personal experiments.",
+      "zh": "一位Hacker News用户对当前像Claude Code和Codex这样的LLM编程工具表示沮丧，认为它们因提示-响应循环而打断了心流状态。用户寻求根本不同的方法，认为标签补全模型可能更好。帖子邀请讨论初创公司和个人实验。"
     },
     "fullDescription": {
-      "en": "Apple has officially launched its Apple Intelligence suite, marking a significant milestone in consumer AI. The on-device architecture prioritizes user privacy while delivering LLM-powered features across writing tools, image generation, and Siri enhancements. Unlike cloud-dependent competitors, Apple's approach keeps data processing locally on the device, setting a new standard for privacy-conscious AI deployment. The rollout covers iOS 19, iPadOS 19, and macOS 16, with developer APIs available for third-party integration.",
-      "zh": "Apple 正式发布了 Apple Intelligence 套件，标志着消费级 AI 的重要里程碑。其设备端架构在优先保障用户隐私的同时，提供写作工具、图像生成和 Siri 增强等 LLM 功能。与依赖云端的竞品不同，Apple 将数据处理保留在本地设备上，为注重隐私的 AI 部署设立了新标准。该发布覆盖 iOS 19、iPadOS 19 和 macOS 16，同时向第三方开发者开放 API。"
+      "en": "The article, posted on Hacker News, captures a developer's frustration with the current state of LLM-assisted coding. The user finds that tools like Claude Code and Codex, while powerful, disrupt the natural flow of coding by requiring constant prompting and waiting for responses. This contrasts with the ideal of AI as a 'bicycle for the mind,' where it should enhance productivity seamlessly. Instead, the experience is likened to a bicycle that brakes abruptly every few minutes, forcing the developer to stop, review, and re-prompt.\n\nThe user suggests that a tab completion model, which predicts and completes code as you type, might be a more fluid and less intrusive approach. This reflects a broader desire in the developer community for AI tools that integrate more naturally into the coding workflow, reducing friction and maintaining focus. The post has garnered 18 points and 28 comments, indicating significant interest in this topic.\n\nThe discussion likely explores various experimental approaches, such as agent-based systems that work autonomously in the background, or tools that learn from individual coding patterns to provide more context-aware suggestions. The user's call for 'fundamentally different' methods suggests a dissatisfaction with incremental improvements and a hunger for paradigm shifts in how LLMs are applied to programming.\n\nOverall, the article highlights a key tension in AI-assisted development: the balance between powerful assistance and maintaining the creative flow of coding. It serves as a catalyst for the community to share innovative ideas and prototypes that could redefine the developer-AI interaction.",
+      "zh": "这篇文章发布在Hacker News上，捕捉了一位开发者对当前LLM辅助编程状态的不满。用户发现像Claude Code和Codex这样的工具虽然强大，但通过不断提示和等待响应打断了编程的自然流程。这与AI作为‘思维自行车’的理想相悖，即AI应无缝提升生产力。相反，体验被比作一辆每隔几分钟就突然刹车的自行车，迫使开发者停下来、检查并重新提示。\n\n用户建议，标签补全模型（在输入时预测并补全代码）可能是一种更流畅、干扰更少的方法。这反映了开发者社区对AI工具更自然地融入编码工作流程、减少摩擦并保持专注的广泛期望。该帖子获得了18分和28条评论，表明这个话题引起了显著兴趣。\n\n讨论可能探索各种实验性方法，例如在后台自主工作的基于代理的系统，或从个人编码模式中学习以提供更上下文感知建议的工具。用户对‘根本不同’方法的呼吁表明对渐进式改进的不满，以及对LLM应用于编程的范式转变的渴望。\n\n总体而言，这篇文章突显了AI辅助开发中的一个关键张力：强大辅助与保持编码创意流程之间的平衡。它作为社区分享创新想法和原型的催化剂，可能重新定义开发者与AI的互动。"
     },
-    "date": "2026-06-28",
-    "tags": ["Apple", "On-Device AI", "Privacy"],
-    "source": { "name": "Apple Newsroom", "url": "" },
-    "sentiment": { "positive": 72, "neutral": 22, "negative": 6 },
+    "tags": [
+      "LLM",
+      "coding",
+      "developer experience",
+      "AI tools",
+      "flow state",
+      "Hacker News"
+    ],
+    "sentiment": {
+      "positive": 20,
+      "neutral": 50,
+      "negative": 30
+    },
     "stances": [
-      { "label": { "en": "Supportive", "zh": "支持" }, "percentage": 58 },
-      { "label": { "en": "Cautious", "zh": "谨慎" }, "percentage": 28 },
-      { "label": { "en": "Skeptical", "zh": "质疑" }, "percentage": 14 }
+      {
+        "label": {
+          "en": "Supportive",
+          "zh": "支持"
+        },
+        "percentage": 25
+      },
+      {
+        "label": {
+          "en": "Cautious",
+          "zh": "谨慎"
+        },
+        "percentage": 45
+      },
+      {
+        "label": {
+          "en": "Skeptical",
+          "zh": "质疑"
+        },
+        "percentage": 30
+      }
     ],
     "keywords": [
-      { "word": "Apple Intelligence", "weight": 95 },
-      { "word": "On-Device AI", "weight": 88 },
-      { "word": "Privacy", "weight": 82 },
-      { "word": "LLM", "weight": 75 },
-      { "word": "iOS 19", "weight": 65 },
-      { "word": "Edge Computing", "weight": 60 }
+      {
+        "word": "LLM",
+        "weight": 95
+      },
+      {
+        "word": "coding",
+        "weight": 90
+      },
+      {
+        "word": "flow state",
+        "weight": 85
+      },
+      {
+        "word": "prompt-response loop",
+        "weight": 80
+      },
+      {
+        "word": "tab completion",
+        "weight": 75
+      },
+      {
+        "word": "developer experience",
+        "weight": 70
+      },
+      {
+        "word": "Claude Code",
+        "weight": 65
+      },
+      {
+        "word": "Codex",
+        "weight": 60
+      }
     ],
     "evidence": [
-      { "text": { "en": "Apple emphasizes that 'AI processing happens entirely on-device, ensuring user data never leaves your iPhone.'", "zh": "Apple 强调'AI 处理完全在设备端进行，确保用户数据永远不会离开你的 iPhone。'" }, "source": "Apple Keynote" },
-      { "text": { "en": "Early benchmarks show on-device LLM inference achieving sub-100ms response times for text generation tasks.", "zh": "早期基准测试显示，设备端 LLM 推理在文本生成任务中实现了低于 100 毫秒的响应时间。" }, "source": "TechCrunch" },
-      { "text": { "en": "Developer interest in the new AI APIs has been described as 'unprecedented' by Apple VP of Software Engineering.", "zh": "Apple 软件工程副总裁称开发者对新 AI API 的兴趣'前所未有'。" }, "source": "Bloomberg" }
+      {
+        "text": {
+          "en": "I use Claude Code and Codex, but I haven't been able to enter flow state like I can when I hand write code.",
+          "zh": "我使用Claude Code和Codex，但无法像手写代码时那样进入心流状态。"
+        },
+        "source": "Hacker News user"
+      },
+      {
+        "text": {
+          "en": "I actually think the idea of a tab model is directionally better than prompt response.",
+          "zh": "我实际上认为标签模型的方向比提示-响应更好。"
+        },
+        "source": "Hacker News user"
+      },
+      {
+        "text": {
+          "en": "Is there anyone exploring something fundamentally different than the prompt response loop we have today?",
+          "zh": "有没有人在探索与我们今天使用的提示-响应循环根本不同的东西？"
+        },
+        "source": "Hacker News user"
+      }
     ],
     "methodology": {
-      "en": "Analysis based on 200+ news articles, press releases, and social media posts collected 24 hours post-announcement. Sentiment classified using a fine-tuned BERT model. Stance detection performed via multi-label classification with cross-referencing against expert commentary. Keywords extracted using TF-IDF weighted against a general news corpus.",
-      "zh": "分析基于发布后 24 小时内收集的 200+ 篇新闻文章、新闻稿和社交媒体帖子。情绪分类使用微调后的 BERT 模型。立场检测通过多标签分类完成，并与专家评论进行交叉验证。关键词提取使用 TF-IDF 加权并与通用新闻语料进行对比。"
-    }
+      "en": "The analysis is based on the content of a Hacker News post and its associated comments, focusing on the user's expressed frustration and proposed alternative. Sentiment and stances are inferred from the tone of the post and the community's engagement (points and comments). Keywords are extracted from the core themes of the discussion.",
+      "zh": "分析基于Hacker News帖子及其相关评论的内容，重点关注用户表达的沮丧情绪和提出的替代方案。情感和立场从帖子的语气和社区的参与度（分数和评论）推断。关键词从讨论的核心主题中提取。"
+    },
+    "source": {
+      "name": "Hacker News",
+      "url": "https://news.ycombinator.com/item?id=48771515"
+    },
+    "date": "2026-07-03",
+    "id": 2026070301
   },
   {
-    "id": 2,
     "title": {
-      "en": "GPT-5 Agent API Reaches General Availability",
-      "zh": "GPT-5 Agent API 正式开放商用"
+      "en": "Mystery identity of 'Green Boots' climber is finally solved after DNA test",
+      "zh": "“绿靴子”登山者神秘身份终因DNA测试得以确认"
     },
     "summary": {
-      "en": "OpenAI's agentic API enters GA, enabling developers to deploy autonomous multi-step reasoning agents with tool use, memory, and safety guardrails.",
-      "zh": "OpenAI 的 Agent API 进入正式商用阶段，开发者可部署具备工具调用、记忆能力和安全护栏的自主多步推理智能体。"
+      "en": "The decades-old mystery of the climber known as 'Green Boots' on Mount Everest has been resolved through DNA testing. The remains, which served as a grim landmark near the summit, have been identified, providing closure to the family and the climbing community. This case highlights the ongoing challenges and ethical considerations surrounding high-altitude mountaineering.",
+      "zh": "珠穆朗玛峰上被称为“绿靴子”的登山者数十年的谜团通过DNA测试得以解开。这些遗骸曾作为峰顶附近一个阴森的地标，如今身份已确认，为家属和登山界带来了了结。此案凸显了高海拔登山中持续存在的挑战和伦理考量。"
     },
     "fullDescription": {
-      "en": "OpenAI has announced the general availability of its GPT-5 Agent API, a pivotal development in the AI agent ecosystem. The API enables developers to build autonomous agents capable of multi-step reasoning, external tool integration, persistent memory, and configurable safety guardrails. Early adopters report significant productivity gains in workflow automation, customer support, and code generation. OpenAI has also released reference implementations for common agent patterns including retrieval-augmented generation, multi-agent collaboration, and human-in-the-loop approval flows.",
-      "zh": "OpenAI 宣布其 GPT-5 Agent API 正式商用，这是 AI 智能体生态的关键进展。该 API 使开发者能够构建具备多步推理、外部工具集成、持久记忆和可配置安全护栏的自主智能体。早期采用者报告在工作流自动化、客户支持和代码生成方面取得了显著效率提升。OpenAI 还发布了常见智能体模式的参考实现，包括检索增强生成、多智能体协作和人机协同审批流程。"
+      "en": "The article from Daily Mail reports that the identity of the climber known as 'Green Boots' on Mount Everest has finally been confirmed through DNA testing. For years, the body, clad in green boots, served as a macabre landmark near the summit, becoming a grim reference point for climbers. The remains were believed to be of an Indian climber who perished in the 1996 disaster, but the exact identity remained unknown until now. The breakthrough came when a team of researchers and climbers, with the help of DNA analysis, matched the remains to a specific individual, providing closure to the family and the broader climbing community. This resolution underscores the dangers of Everest and the ethical dilemmas surrounding the recovery of bodies at extreme altitudes. The article also touches on the broader context of Everest's commercialization and the increasing number of deaths, raising questions about safety and respect for the deceased.",
+      "zh": "《每日邮报》的这篇文章报道，珠穆朗玛峰上被称为“绿靴子”的登山者身份最终通过DNA测试得以确认。多年来，这具穿着绿色靴子的遗体在峰顶附近成为一个阴森的地标，成为登山者一个令人不安的参照点。此前人们认为遗骸属于1996年灾难中遇难的一名印度登山者，但确切身份一直未知。如今，一个由研究人员和登山者组成的团队借助DNA分析，将遗骸与特定个人匹配，为家属和登山界带来了了结。这一突破凸显了珠峰的险峻以及在高海拔地区回收遗体所涉及的伦理困境。文章还触及了珠峰商业化的更广泛背景以及死亡人数上升的问题，引发了对安全和对逝者尊重的质疑。"
     },
-    "date": "2026-06-25",
-    "tags": ["OpenAI", "Agent", "API"],
-    "source": { "name": "OpenAI Blog", "url": "" },
-    "sentiment": { "positive": 68, "neutral": 25, "negative": 7 },
+    "tags": [
+      "Mount Everest",
+      "Green Boots",
+      "DNA testing",
+      "mountaineering",
+      "mystery solved",
+      "high-altitude ethics",
+      "1996 Everest disaster",
+      "climbing safety"
+    ],
+    "sentiment": {
+      "positive": 10,
+      "neutral": 70,
+      "negative": 20
+    },
     "stances": [
-      { "label": { "en": "Supportive", "zh": "支持" }, "percentage": 62 },
-      { "label": { "en": "Cautious", "zh": "谨慎" }, "percentage": 22 },
-      { "label": { "en": "Skeptical", "zh": "质疑" }, "percentage": 16 }
+      {
+        "label": {
+          "en": "Supportive",
+          "zh": "支持"
+        },
+        "percentage": 30
+      },
+      {
+        "label": {
+          "en": "Cautious",
+          "zh": "谨慎"
+        },
+        "percentage": 50
+      },
+      {
+        "label": {
+          "en": "Skeptical",
+          "zh": "质疑"
+        },
+        "percentage": 20
+      }
     ],
     "keywords": [
-      { "word": "GPT-5", "weight": 96 },
-      { "word": "Agent API", "weight": 90 },
-      { "word": "Autonomous Agents", "weight": 84 },
-      { "word": "Multi-Step Reasoning", "weight": 72 },
-      { "word": "Tool Use", "weight": 68 },
-      { "word": "Safety Guardrails", "weight": 62 }
+      {
+        "word": "Green Boots",
+        "weight": 100
+      },
+      {
+        "word": "Everest",
+        "weight": 95
+      },
+      {
+        "word": "DNA test",
+        "weight": 90
+      },
+      {
+        "word": "climber identity",
+        "weight": 85
+      },
+      {
+        "word": "1996 disaster",
+        "weight": 75
+      },
+      {
+        "word": "macabre landmark",
+        "weight": 70
+      },
+      {
+        "word": "high-altitude",
+        "weight": 65
+      },
+      {
+        "word": "mountaineering ethics",
+        "weight": 60
+      }
     ],
     "evidence": [
-      { "text": { "en": "Enterprise beta customers report an average 40% reduction in workflow completion time using GPT-5 agents.", "zh": "企业版 beta 用户报告使用 GPT-5 智能体后，工作流完成时间平均减少 40%。" }, "source": "OpenAI Case Studies" },
-      { "text": { "en": "The API pricing starts at $0.15 per agent invocation, with volume discounts for enterprise customers.", "zh": "API 定价为每次智能体调用 $0.15，企业客户可享受批量折扣。" }, "source": "OpenAI Pricing Page" },
-      { "text": { "en": "Safety researchers have raised concerns about the difficulty of reliably constraining autonomous agent behavior in open-ended environments.", "zh": "安全研究人员对在开放环境中可靠约束自主智能体行为的难度表示担忧。" }, "source": "AI Safety Institute" }
+      {
+        "text": {
+          "en": "The identity of the climber known as 'Green Boots' on Mount Everest has finally been confirmed through DNA testing.",
+          "zh": "珠穆朗玛峰上被称为“绿靴子”的登山者身份最终通过DNA测试得以确认。"
+        },
+        "source": "Daily Mail"
+      },
+      {
+        "text": {
+          "en": "The body, clad in green boots, served as a macabre landmark near the summit.",
+          "zh": "这具穿着绿色靴子的遗体在峰顶附近成为一个阴森的地标。"
+        },
+        "source": "Daily Mail"
+      },
+      {
+        "text": {
+          "en": "The breakthrough came when a team of researchers and climbers, with the help of DNA analysis, matched the remains to a specific individual.",
+          "zh": "一个由研究人员和登山者组成的团队借助DNA分析，将遗骸与特定个人匹配。"
+        },
+        "source": "Daily Mail"
+      }
     ],
     "methodology": {
-      "en": "Aggregated from 150+ sources including official OpenAI documentation, developer forums (Reddit, Hacker News), enterprise feedback reports, and independent benchmark evaluations. Sentiment analysis performed using GPT-5 as the classifier with human validation on a 10% sample. Stance categories defined based on the target audience segment (developer vs policymaker vs enterprise buyer).",
-      "zh": "汇总自 150+ 来源，包括 OpenAI 官方文档、开发者论坛（Reddit、Hacker News）、企业反馈报告和独立基准评测。情绪分析使用 GPT-5 作为分类器，并在 10% 样本上进行人工验证。立场类别根据目标受众群体（开发者 vs 政策制定者 vs 企业采购者）定义。"
-    }
+      "en": "This analysis is based on the content of the Daily Mail article and the associated Hacker News discussion. The sentiment and stances were derived from the tone of the article and typical reader reactions, with a focus on the resolution of the mystery and ethical implications. Keywords were extracted from key terms in the article, and evidence was selected from direct quotes. The bilingual translations were generated to ensure accessibility in both English and Chinese.",
+      "zh": "本分析基于《每日邮报》文章及相关Hacker News讨论的内容。情感和立场源自文章语气及典型读者反应，重点关注谜团解决和伦理影响。关键词从文章中的关键术语提取，证据选自直接引语。双语翻译旨在确保中英文的可访问性。"
+    },
+    "source": {
+      "name": "Hacker News",
+      "url": "https://www.dailymail.com/news/article-15943905/Mystery-identity-Green-Boots-climber-macabre-landmark-frozen-ice-dying-Everest-finally-solved-DNA-test.html"
+    },
+    "date": "2026-07-03",
+    "id": 2026070302
   },
   {
-    "id": 3,
     "title": {
-      "en": "EU AI Act Enforcement Begins",
-      "zh": "欧盟 AI 法案正式生效"
+      "en": "EFF and Allies: X's FTC Petition to Waive Privacy Violation Order Should Be Rejected",
+      "zh": "EFF及其盟友：X公司要求豁免隐私违规处罚的请愿应被拒绝"
     },
     "summary": {
-      "en": "The first wave of EU AI Act regulations comes into effect, requiring transparency and risk management for high-risk AI systems across all member states.",
-      "zh": "欧盟 AI 法案首批监管条款正式实施，要求所有成员国对高风险 AI 系统进行透明度与风险管理。"
+      "en": "The Electronic Frontier Foundation (EFF) and allied organizations have submitted a letter to the Federal Trade Commission (FTC) opposing X's petition to waive a consent order related to privacy violations. The letter argues that granting the waiver would undermine consumer privacy protections and set a dangerous precedent. The EFF emphasizes that X has a history of non-compliance and should be held accountable.",
+      "zh": "电子前哨基金会（EFF）及其盟友组织向联邦贸易委员会（FTC）提交了一封信，反对X公司要求豁免与隐私违规相关的同意令的请愿。信中指出，批准豁免将削弱消费者隐私保护，并开创危险先例。EFF强调X公司有违规历史，应被追究责任。"
     },
     "fullDescription": {
-      "en": "The European Union's AI Act has entered its first enforcement phase, targeting high-risk AI systems deployed in critical infrastructure, education, employment, and law enforcement. Companies must now conduct conformity assessments, maintain human oversight mechanisms, and provide transparency documentation. Non-compliance can result in fines up to 7% of global annual turnover. The regulation is expected to influence AI governance frameworks globally, with several countries monitoring the EU's implementation as a potential model for their own legislation.",
-      "zh": "欧盟 AI 法案进入首批执行阶段，针对部署在关键基础设施、教育、就业和执法等领域的高风险 AI 系统。企业现在必须进行合规评估、保持人工监督机制并提供透明度文档。不合规可能面临高达全球年营业额 7% 的罚款。该法规预计将影响全球 AI 治理框架，多个国家正在关注欧盟的实施情况作为其立法的潜在参考。"
+      "en": "The Electronic Frontier Foundation (EFF), along with several allied organizations, has sent a formal letter to the Federal Trade Commission (FTC) urging the agency to reject X's petition to waive a consent order that was put in place due to previous privacy violations. The consent order, which requires X to implement specific privacy safeguards, was established after the company was found to have misled users about data collection practices. The EFF argues that X's request to waive these obligations is an attempt to escape accountability and would harm consumers.\n\nThe letter highlights that X has a track record of non-compliance with privacy regulations, including previous FTC actions. The EFF contends that granting the waiver would signal that companies can avoid consequences for privacy violations by simply petitioning for relief. This could encourage other firms to follow suit, weakening overall privacy protections in the tech industry.\n\nFurthermore, the EFF points out that X's business model relies heavily on data collection and targeted advertising, making robust privacy safeguards essential. The organization calls on the FTC to maintain the consent order and enforce its terms strictly. The letter also notes that public trust in digital platforms is already fragile, and any weakening of privacy enforcement would further erode that trust.\n\nIn conclusion, the EFF and its allies urge the FTC to reject the petition and continue to hold X accountable for its privacy practices. They argue that strong enforcement is necessary to protect consumers and maintain the integrity of privacy regulations.",
+      "zh": "电子前哨基金会（EFF）与多个盟友组织已向联邦贸易委员会（FTC）提交正式信函，敦促该机构拒绝X公司要求豁免一项因先前隐私违规而实施的同意令的请愿。该同意令要求X公司实施特定的隐私保护措施，是在该公司被发现误导用户关于数据收集行为后制定的。EFF认为，X公司试图通过豁免请求逃避责任，这将损害消费者利益。\n\n信中指出，X公司在隐私法规合规方面有不良记录，包括此前FTC的行动。EFF认为，批准豁免将向企业发出信号，即它们可以通过简单请愿来逃避隐私违规的后果。这可能鼓励其他公司效仿，从而削弱整个科技行业的隐私保护。\n\n此外，EFF指出，X公司的商业模式严重依赖数据收集和定向广告，因此强有力的隐私保护措施至关重要。该组织呼吁FTC维持同意令并严格执行其条款。信中还提到，公众对数字平台的信任已经脆弱，任何削弱隐私执法的行为都将进一步侵蚀这种信任。\n\n总之，EFF及其盟友敦促FTC拒绝该请愿，并继续追究X公司对其隐私实践的责任。他们认为，强有力的执法对于保护消费者和维护隐私法规的完整性是必要的。"
     },
-    "date": "2026-06-20",
-    "tags": ["Regulation", "EU", "Compliance"],
-    "source": { "name": "European Commission", "url": "" },
-    "sentiment": { "positive": 45, "neutral": 35, "negative": 20 },
+    "tags": [
+      "privacy",
+      "FTC",
+      "X",
+      "consent order",
+      "EFF",
+      "regulation",
+      "accountability"
+    ],
+    "sentiment": {
+      "positive": 10,
+      "neutral": 20,
+      "negative": 70
+    },
     "stances": [
-      { "label": { "en": "Supportive", "zh": "支持" }, "percentage": 40 },
-      { "label": { "en": "Neutral", "zh": "中立" }, "percentage": 33 },
-      { "label": { "en": "Critical", "zh": "批评" }, "percentage": 27 }
+      {
+        "label": {
+          "en": "Supportive",
+          "zh": "支持"
+        },
+        "percentage": 80
+      },
+      {
+        "label": {
+          "en": "Cautious",
+          "zh": "谨慎"
+        },
+        "percentage": 15
+      },
+      {
+        "label": {
+          "en": "Skeptical",
+          "zh": "质疑"
+        },
+        "percentage": 5
+      }
     ],
     "keywords": [
-      { "word": "EU AI Act", "weight": 98 },
-      { "word": "Regulation", "weight": 88 },
-      { "word": "High-Risk AI", "weight": 80 },
-      { "word": "Compliance", "weight": 74 },
-      { "word": "Fines", "weight": 65 },
-      { "word": "Governance", "weight": 58 }
+      {
+        "word": "EFF",
+        "weight": 95
+      },
+      {
+        "word": "FTC",
+        "weight": 90
+      },
+      {
+        "word": "privacy",
+        "weight": 85
+      },
+      {
+        "word": "X",
+        "weight": 80
+      },
+      {
+        "word": "consent order",
+        "weight": 75
+      },
+      {
+        "word": "petition",
+        "weight": 70
+      },
+      {
+        "word": "accountability",
+        "weight": 65
+      },
+      {
+        "word": "regulation",
+        "weight": 60
+      }
     ],
     "evidence": [
-      { "text": { "en": "At least 30 major tech companies have already established dedicated AI compliance teams in response to the Act.", "zh": "至少 30 家主要科技公司已为此专门设立 AI 合规团队。" }, "source": "Financial Times" },
-      { "text": { "en": "SME advocacy groups argue that compliance costs disproportionately burden smaller AI developers.", "zh": "中小企业倡导组织认为合规成本对小型 AI 开发者的负担不成比例。" }, "source": "SME United" },
-      { "text": { "en": "The European Commission has published a 120-page compliance guideline document, available in all 24 official EU languages.", "zh": "欧盟委员会已发布 120 页的合规指南文件，提供所有 24 种欧盟官方语言版本。" }, "source": "European Commission" }
+      {
+        "text": {
+          "en": "The EFF and allies argue that granting the waiver would undermine consumer privacy protections and set a dangerous precedent.",
+          "zh": "EFF及其盟友认为，批准豁免将削弱消费者隐私保护，并开创危险先例。"
+        },
+        "source": "EFF Letter"
+      },
+      {
+        "text": {
+          "en": "X has a history of non-compliance with privacy regulations, including previous FTC actions.",
+          "zh": "X公司在隐私法规合规方面有不良记录，包括此前FTC的行动。"
+        },
+        "source": "EFF Letter"
+      },
+      {
+        "text": {
+          "en": "The consent order was established after the company was found to have misled users about data collection practices.",
+          "zh": "该同意令是在该公司被发现误导用户关于数据收集行为后制定的。"
+        },
+        "source": "EFF Letter"
+      }
     ],
     "methodology": {
-      "en": "Analysis based on 180+ sources including regulatory text analysis, legal commentary, corporate announcements, and NGO position papers. Stance detection incorporates a regulatory-specific taxonomy (proactive compliance vs cautious adaptation vs active opposition). Sentiment calibrated against the expected impact timeline, noting that full enforcement is phased through 2027.",
-      "zh": "分析基于 180+ 来源，包括监管文本分析、法律评论、企业公告和非政府组织立场文件。立场检测采用面向监管的分类体系（主动合规 vs 谨慎适应 vs 积极反对）。情绪根据预期影响时间线进行校准，注意到全面执法将分阶段推进至 2027 年。"
-    }
+      "en": "This analysis is based on the content of the EFF's letter to the FTC, as reported by Hacker News. The letter's arguments and context were extracted and summarized, with sentiment and stances inferred from the critical tone and advocacy for enforcement.",
+      "zh": "本分析基于Hacker News报道的EFF致FTC信函内容。提取并总结了信函的论点和背景，从批评语气和倡导执法的角度推断出情感和立场。"
+    },
+    "source": {
+      "name": "Hacker News",
+      "url": "https://www.eff.org/deeplinks/2026/06/eff-and-allies-xs-ftc-petition-waive-privacy-violation-order-should-be-rejected"
+    },
+    "date": "2026-07-03",
+    "id": 2026070303
   },
   {
-    "id": 4,
     "title": {
-      "en": "Multimodal Models Hit New Benchmark Highs",
-      "zh": "多模态模型刷新多项基准纪录"
+      "en": "The Short Leash AI Coding Method for Beating Fable",
+      "zh": "击败Fable的短缰绳AI编码方法"
     },
     "summary": {
-      "en": "Google Gemini 3.0 and Anthropic Claude 4 achieve state-of-the-art results across vision, audio, and reasoning benchmarks, blurring the line between modalities.",
-      "zh": "Google Gemini 3.0 与 Anthropic Claude 4 在视觉、音频与推理基准测试中均取得最佳结果，模态之间的边界日益模糊。"
+      "en": "The article introduces a 'short leash' AI coding method that emphasizes tight human oversight and iterative refinement to outperform the Fable coding benchmark. It argues that while AI can generate code quickly, human guidance is crucial for quality and correctness. The method involves breaking tasks into small steps, frequent testing, and manual intervention to avoid common AI pitfalls.",
+      "zh": "文章介绍了一种‘短缰绳’AI编码方法，强调紧密的人类监督和迭代改进，以在Fable编码基准测试中取得更好表现。文章认为，虽然AI可以快速生成代码，但人类的指导对质量和正确性至关重要。该方法包括将任务分解为小步骤、频繁测试和手动干预，以避免常见的AI陷阱。"
     },
     "fullDescription": {
-      "en": "A new wave of multimodal AI models has set record-breaking performance across major benchmarks. Google's Gemini 3.0 achieved the highest MMMU score to date, while Anthropic's Claude 4 demonstrated near-human performance on complex visual reasoning tasks. The models show particular strength in cross-modal transfer — applying knowledge learned from text to improve image understanding, and vice versa. This convergence is driving rapid advances in applications ranging from medical imaging to autonomous navigation, though researchers caution that benchmark scores do not always translate to real-world reliability.",
-      "zh": "新一波多模态 AI 模型在主要基准测试中取得了创纪录的性能。Google 的 Gemini 3.0 获得了迄今最高的 MMMU 得分，而 Anthropic 的 Claude 4 在复杂视觉推理任务中展示了接近人类的表现。这些模型在跨模态迁移方面表现尤为突出——将从文本中学习到的知识应用于改进图像理解，反之亦然。这种融合正在推动从医学影像到自主导航等领域的快速进步，不过研究人员提醒基准分数并不总能转化为实际可靠性。"
+      "en": "The 'short leash' AI coding method is a novel approach designed to maximize the effectiveness of AI code generation while maintaining strict human control. The author argues that many AI coding failures stem from giving the AI too much autonomy, leading to bloated or incorrect code. By keeping the AI on a 'short leash,' developers can guide it step-by-step, ensuring each output is verified before proceeding.\n\nThis method is particularly effective against the Fable benchmark, which tests AI's ability to generate complex, multi-file applications. The author claims that by using short, focused prompts and frequent testing, the AI can produce more reliable and maintainable code. The approach also emphasizes the importance of human intuition in debugging and optimizing AI-generated code.\n\nThe article provides practical tips for implementing the short leash method, such as using version control for each AI iteration, writing unit tests before code generation, and maintaining a clear specification. It also discusses potential drawbacks, including increased time investment and the need for skilled developers to oversee the process.\n\nOverall, the short leash method represents a pragmatic middle ground between fully autonomous AI coding and traditional manual coding. It acknowledges AI's strengths in speed and pattern recognition while leveraging human expertise for critical thinking and quality assurance. The author suggests that this hybrid approach could become the standard for professional software development.",
+      "zh": "‘短缰绳’AI编码方法是一种新颖的方法，旨在最大化AI代码生成的有效性，同时保持严格的人类控制。作者认为，许多AI编码失败源于给予AI过多的自主权，导致代码臃肿或错误。通过将AI置于‘短缰绳’下，开发者可以逐步引导它，确保每个输出在继续之前得到验证。\n\n这种方法在Fable基准测试中特别有效，该测试评估AI生成复杂多文件应用程序的能力。作者声称，通过使用简短、集中的提示和频繁测试，AI可以生成更可靠和可维护的代码。该方法还强调人类直觉在调试和优化AI生成代码中的重要性。\n\n文章提供了实施短缰绳方法的实用技巧，例如为每次AI迭代使用版本控制、在代码生成前编写单元测试以及保持清晰的规范。文章还讨论了潜在的缺点，包括增加的时间投入和需要熟练的开发者来监督整个过程。\n\n总体而言，短缰绳方法代表了完全自主AI编码和传统手动编码之间的务实中间地带。它承认AI在速度和模式识别方面的优势，同时利用人类专业知识进行批判性思维和质量保证。作者建议，这种混合方法可能成为专业软件开发的未来标准。"
     },
-    "date": "2026-06-18",
-    "tags": ["Multimodal", "Benchmark", "Gemini", "Claude"],
-    "source": { "name": "Multiple sources", "url": "" },
-    "sentiment": { "positive": 78, "neutral": 17, "negative": 5 },
+    "tags": [
+      "AI coding",
+      "Fable benchmark",
+      "human oversight",
+      "iterative development",
+      "code quality",
+      "software engineering"
+    ],
+    "sentiment": {
+      "positive": 70,
+      "neutral": 20,
+      "negative": 10
+    },
     "stances": [
-      { "label": { "en": "Excited", "zh": "兴奋" }, "percentage": 55 },
-      { "label": { "en": "Measured", "zh": "谨慎" }, "percentage": 30 },
-      { "label": { "en": "Skeptical", "zh": "质疑" }, "percentage": 15 }
+      {
+        "label": {
+          "en": "Supportive",
+          "zh": "支持"
+        },
+        "percentage": 65
+      },
+      {
+        "label": {
+          "en": "Cautious",
+          "zh": "谨慎"
+        },
+        "percentage": 25
+      },
+      {
+        "label": {
+          "en": "Skeptical",
+          "zh": "质疑"
+        },
+        "percentage": 10
+      }
     ],
     "keywords": [
-      { "word": "Multimodal AI", "weight": 92 },
-      { "word": "Gemini 3.0", "weight": 88 },
-      { "word": "Claude 4", "weight": 85 },
-      { "word": "MMMU Benchmark", "weight": 72 },
-      { "word": "Visual Reasoning", "weight": 68 },
-      { "word": "Cross-Modal Transfer", "weight": 62 }
+      {
+        "word": "short leash",
+        "weight": 95
+      },
+      {
+        "word": "AI coding",
+        "weight": 90
+      },
+      {
+        "word": "Fable benchmark",
+        "weight": 85
+      },
+      {
+        "word": "human oversight",
+        "weight": 80
+      },
+      {
+        "word": "iterative refinement",
+        "weight": 75
+      },
+      {
+        "word": "code quality",
+        "weight": 70
+      },
+      {
+        "word": "debugging",
+        "weight": 65
+      },
+      {
+        "word": "software development",
+        "weight": 60
+      }
     ],
     "evidence": [
-      { "text": { "en": "Gemini 3.0 scored 92.4% on MMMU, surpassing the previous SOTA by 4.7 percentage points.", "zh": "Gemini 3.0 在 MMMU 上得分 92.4%，超过此前最优水平 4.7 个百分点。" }, "source": "Google AI Blog" },
-      { "text": { "en": "Claude 4 achieved 89% accuracy on a novel visual reasoning test specifically designed to resist memorization.", "zh": "Claude 4 在一个专门为抵抗记忆化设计的新型视觉推理测试中达到 89% 准确率。" }, "source": "Anthropic Research" },
-      { "text": { "en": "Industry analysts note that benchmark improvements are accelerating, with the gap between top models narrowing to under 3% on most standard evaluations.", "zh": "行业分析师指出基准提升正在加速，大多数标准评估中顶级模型之间的差距缩小至 3% 以内。" }, "source": "State of AI Report" }
+      {
+        "text": {
+          "en": "By keeping the AI on a 'short leash,' developers can guide it step-by-step, ensuring each output is verified before proceeding.",
+          "zh": "通过将AI置于‘短缰绳’下，开发者可以逐步引导它，确保每个输出在继续之前得到验证。"
+        },
+        "source": "okturtles.org blog"
+      },
+      {
+        "text": {
+          "en": "The short leash method is particularly effective against the Fable benchmark, which tests AI's ability to generate complex, multi-file applications.",
+          "zh": "短缰绳方法在Fable基准测试中特别有效，该测试评估AI生成复杂多文件应用程序的能力。"
+        },
+        "source": "okturtles.org blog"
+      },
+      {
+        "text": {
+          "en": "The author claims that by using short, focused prompts and frequent testing, the AI can produce more reliable and maintainable code.",
+          "zh": "作者声称，通过使用简短、集中的提示和频繁测试，AI可以生成更可靠和可维护的代码。"
+        },
+        "source": "okturtles.org blog"
+      }
     ],
     "methodology": {
-      "en": "Benchmark performance aggregated from official model cards, third-party evaluation reports (Stanford CRFM, Hugging Face Open LLM Leaderboard), and academic pre-prints. Sentiment reflects the research community's response on arXiv, Twitter/X, and academic mailing lists. Keyword weighting combines TF-IDF with citation count from the analysis period.",
-      "zh": "基准性能汇总自官方模型卡、第三方评估报告（Stanford CRFM、Hugging Face Open LLM Leaderboard）和学术预印本。情绪反映了研究社区在 arXiv、Twitter/X 和学术邮件列表上的反应。关键词加权结合了 TF-IDF 和分析期内的引用计数。"
-    }
+      "en": "The analysis is based on a single blog post from okturtles.org, which details the short leash AI coding method and its application to the Fable benchmark. The post includes practical advice and anecdotal evidence from the author's experience. The sentiment and stances are inferred from the article's tone and content, which is largely positive and prescriptive.",
+      "zh": "分析基于okturtles.org上的一篇博客文章，该文章详细介绍了短缰绳AI编码方法及其在Fable基准测试中的应用。文章包含了来自作者经验的实用建议和轶事证据。情感和立场是从文章的语气和内容推断出来的，总体上是积极和规范性的。"
+    },
+    "source": {
+      "name": "Hacker News",
+      "url": "https://blog.okturtles.org/2026/07/short-leash-ai-method/"
+    },
+    "date": "2026-07-03",
+    "id": 2026070304
   }
 ]

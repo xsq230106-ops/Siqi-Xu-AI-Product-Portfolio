@@ -1,6 +1,6 @@
 "use client";
 
-import type { Locale } from "@/i18n/dictionary";
+import { t, type Locale } from "@/i18n/dictionary";
 import resumeData from "../../resume-data.json";
 
 const data = resumeData as any;
@@ -14,23 +14,20 @@ interface Props {
 export default function LeftPanel({ locale, isExpanded, onDragStart }: Props) {
   const R = (obj: Record<string, string> | undefined) =>
     obj ? obj[locale] ?? "" : "";
+  const T = (key: string) => t(key, locale);
 
   return (
     <div className="h-full bg-white border-r border-slate-200 overflow-y-auto relative">
       <div className="p-6 lg:p-8">
         {/* Compact profile rail */}
         <div className="flex flex-col items-center lg:items-start gap-4">
-          <div className="w-20 h-20 rounded-full bg-slate-200 flex items-center justify-center text-slate-400 overflow-hidden shrink-0">
-            <svg viewBox="0 0 80 80" fill="none" className="w-full h-full">
-              <rect width="80" height="80" rx="40" fill="#e2e8f0" />
-              <circle cx="40" cy="32" r="12" fill="#94a3b8" />
-              <path d="M18 66c0-12.15 9.85-22 22-22s22 9.85 22 22" fill="#94a3b8" />
-            </svg>
+          <div className="w-20 h-20 overflow-hidden shrink-0 bg-slate-100">
+            <img src="/avatar.jpg" alt="Siqi Xu" className="w-full h-full object-cover object-top" />
           </div>
           <div className="text-center lg:text-left">
             <h1 className="text-xl font-semibold text-slate-900">{R(data.name)}</h1>
-            <p className="text-sm text-slate-500 mt-0.5">{data.email}</p>
-            <p className="text-sm text-slate-500">{data.phone}</p>
+            <p className="text-sm text-slate-500 mt-0.5">{R(data.email)}</p>
+            <p className="text-sm text-slate-500">{R(data.phone)}</p>
           </div>
         </div>
 
@@ -43,7 +40,7 @@ export default function LeftPanel({ locale, isExpanded, onDragStart }: Props) {
         {/* Skills tag cloud */}
         <div className="mt-5">
           <h2 className="text-xs font-semibold uppercase tracking-wider text-slate-400 mb-2">
-            {locale === "en" ? "Skills" : "技能"}
+            {T("skills_compact")}
           </h2>
           <div className="flex flex-wrap gap-1.5">
             {data.skills.map((s: any) => (
@@ -66,7 +63,7 @@ export default function LeftPanel({ locale, isExpanded, onDragStart }: Props) {
               {/* About */}
               <section>
                 <h2 className="text-xs font-semibold uppercase tracking-widest text-slate-400 mb-2">
-                  {locale === "en" ? "About" : "个人简介"}
+                  {T("about")}
                 </h2>
                 <p className="text-sm text-slate-700 leading-relaxed">{R(data.about)}</p>
               </section>
@@ -76,7 +73,7 @@ export default function LeftPanel({ locale, isExpanded, onDragStart }: Props) {
               {/* Education (array) */}
               <section>
                 <h2 className="text-xs font-semibold uppercase tracking-widest text-slate-400 mb-2">
-                  {locale === "en" ? "Education" : "教育背景"}
+                  {T("education")}
                 </h2>
                 <div className="text-sm space-y-3">
                   {data.education.map((e: any, i: number) => (
@@ -97,7 +94,7 @@ export default function LeftPanel({ locale, isExpanded, onDragStart }: Props) {
               {/* Projects */}
               <section>
                 <h2 className="text-xs font-semibold uppercase tracking-widest text-slate-400 mb-2">
-                  {locale === "en" ? "Projects" : "项目经验"}
+                  {T("projects")}
                 </h2>
                 <div className="space-y-3">
                   {data.projects.map((p: any, i: number) => (
@@ -133,7 +130,7 @@ export default function LeftPanel({ locale, isExpanded, onDragStart }: Props) {
               {/* Skills */}
               <section>
                 <h2 className="text-xs font-semibold uppercase tracking-widest text-slate-400 mb-2">
-                  {locale === "en" ? "Skills" : "专业技能"}
+                  {T("skills")}
                 </h2>
                 <div className="flex flex-wrap gap-1.5">
                   {data.skills.map((s: any) => (
@@ -152,7 +149,7 @@ export default function LeftPanel({ locale, isExpanded, onDragStart }: Props) {
               {/* Research Interests */}
               <section>
                 <h2 className="text-xs font-semibold uppercase tracking-widest text-slate-400 mb-2">
-                  {locale === "en" ? "Research Interests" : "研究兴趣"}
+                  {T("research")}
                 </h2>
                 <ul className="list-disc list-inside text-sm text-slate-600 space-y-0.5">
                   {data.researchInterests[locale]?.map((item: string, i: number) => (
@@ -166,16 +163,14 @@ export default function LeftPanel({ locale, isExpanded, onDragStart }: Props) {
               {/* Contact */}
               <section>
                 <h2 className="text-xs font-semibold uppercase tracking-widest text-slate-400 mb-2">
-                  {locale === "en" ? "Contact" : "联系方式"}
+                  {T("contact")}
                 </h2>
                 <div className="text-sm text-slate-700 space-y-1">
-                  <p>{data.email}</p>
-                  <p>{data.phone}</p>
+                  <p>{R(data.email)}</p>
+                  <p>{R(data.phone)}</p>
                 </div>
                 <p className="text-xs text-slate-400 mt-1">
-                  {locale === "en"
-                    ? "Open to full-time and internship opportunities."
-                    : "对全职与实习机会均持开放态度。"}
+                  {T("contact_note")}
                 </p>
               </section>
             </div>

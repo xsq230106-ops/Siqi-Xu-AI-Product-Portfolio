@@ -1,0 +1,23 @@
+{
+  "today_topic": "Today's Topic Lab",
+  "about": "About",
+  "education": "Education",
+  "projects": "Projects",
+  "skills": "Skills",
+  "skills_compact": "Skills",
+  "research": "Research Interests",
+  "contact": "Contact",
+  "sentiment": "Sentiment Distribution",
+  "stance": "Stance Breakdown",
+  "positive": "Positive",
+  "neutral": "Neutral",
+  "negative": "Negative",
+  "keywords": "Keywords",
+  "evidence": "Evidence Samples",
+  "methodology": "Methodology",
+  "back_to_list": "Back to list",
+  "resume": "Resume",
+  "contact_note": "Open to full-time and internship opportunities.",
+  "footer_note": "Static demo data — analysis is illustrative, not from live sources",
+  "footer_list": "Static demo — no live data or API connections"
+}

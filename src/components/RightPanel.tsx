@@ -57,6 +57,7 @@ function ListView({
   const T = (key: string) => t(key, locale);
   const R = (obj: Record<string, string> | undefined) =>
     obj ? obj[locale] ?? "" : "";
+  const Td = (key: string) => t(key, locale);
 
   return (
     <main className="flex-1 overflow-y-auto">
@@ -118,7 +119,7 @@ function ListView({
 
       <div className="px-6 lg:px-10 pb-8">
         <p className="text-xs text-slate-400 text-center">
-          Static demo — no live data or API connections
+          {Td("footer_list")}
         </p>
       </div>
     </main>
@@ -138,6 +139,7 @@ function DetailView({
 }) {
   const R = (obj: Record<string, string> | undefined) =>
     obj ? obj[locale] ?? "" : "";
+  const Td = (key: string) => t(key, locale);
 
   return (
     <main className="flex-1 overflow-y-auto">
@@ -149,7 +151,7 @@ function DetailView({
           <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
             <path strokeLinecap="round" strokeLinejoin="round" d="M15 19l-7-7 7-7" />
           </svg>
-          Back to list
+          {Td("back_to_list")}
         </button>
       </div>
 
@@ -184,7 +186,7 @@ function DetailView({
         {/* Sentiment — ECharts pie chart */}
         <section className="mb-6">
           <h2 className="text-xs font-semibold uppercase tracking-widest text-slate-400 mb-3">
-            {locale === "en" ? "Sentiment Distribution" : "情绪分布"}
+            {Td("sentiment")}
           </h2>
           <SentimentPieChart
             positive={hotspot.sentiment.positive}
@@ -197,10 +199,10 @@ function DetailView({
         {/* Stances — ECharts horizontal bar chart */}
         <section className="mb-6">
           <h2 className="text-xs font-semibold uppercase tracking-widest text-slate-400 mb-3">
-            {locale === "en" ? "Stance Breakdown" : "立场分布"}
+            {Td("stance")}
           </h2>
           <StanceBarChart
-            data={hotspot.stances.map((st) => ({
+            data={hotspot.stances.map((st: any) => ({
               label: R(st.label),
               percentage: st.percentage,
             }))}
@@ -212,7 +214,7 @@ function DetailView({
         {/* Keywords */}
         <section className="mb-6">
           <h2 className="text-xs font-semibold uppercase tracking-widest text-slate-400 mb-3">
-            {locale === "en" ? "Keywords" : "关键词"}
+            {Td("keywords")}
           </h2>
           <div className="flex flex-wrap gap-2">
             {hotspot.keywords.map((k) => (
@@ -234,7 +236,7 @@ function DetailView({
         {/* Evidence */}
         <section className="mb-6">
           <h2 className="text-xs font-semibold uppercase tracking-widest text-slate-400 mb-3">
-            {locale === "en" ? "Evidence Samples" : "证据样本"}
+            {Td("evidence")}
           </h2>
           <div className="space-y-4">
             {hotspot.evidence.map((e, i) => (
@@ -258,7 +260,7 @@ function DetailView({
         {/* Methodology */}
         <section className="mb-6">
           <h2 className="text-xs font-semibold uppercase tracking-widest text-slate-400 mb-3">
-            {locale === "en" ? "Methodology" : "分析方法"}
+            {Td("methodology")}
           </h2>
           <p className="text-sm text-slate-600 leading-relaxed">
             {R(hotspot.methodology)}
@@ -266,7 +268,7 @@ function DetailView({
         </section>
 
         <p className="text-xs text-slate-400 text-center pt-4">
-          Static demo data — analysis is illustrative, not from live sources
+          {Td("footer_note")}
         </p>
       </div>
     </main>

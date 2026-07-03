@@ -1,0 +1,23 @@
+{
+  "today_topic": "今日热点观察",
+  "about": "个人简介",
+  "education": "教育背景",
+  "projects": "项目经验",
+  "skills": "专业技能",
+  "skills_compact": "技能",
+  "research": "研究兴趣",
+  "contact": "联系方式",
+  "sentiment": "情绪分布",
+  "stance": "立场分布",
+  "positive": "正面",
+  "neutral": "中性",
+  "negative": "负面",
+  "keywords": "关键词",
+  "evidence": "证据样本",
+  "methodology": "分析方法",
+  "back_to_list": "返回列表",
+  "resume": "履历",
+  "contact_note": "对全职与实习机会均持开放态度。",
+  "footer_note": "静态演示数据 — 分析仅供示意，并非来自实时来源",
+  "footer_list": "静态演示 — 无实时数据或 API 连接"
+}
