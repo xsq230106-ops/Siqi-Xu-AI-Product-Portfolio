@@ -1,4 +1,5 @@
 import HtmlLangSetter from "@/components/HtmlLangSetter";
+import ThemeProvider from "@/components/ThemeProvider";
 
 export default async function LocaleLayout({
   children,
@@ -11,7 +12,7 @@ export default async function LocaleLayout({
   return (
     <>
       <HtmlLangSetter lang={locale} />
-      {children}
+      <ThemeProvider>{children}</ThemeProvider>
     </>
   );
 }

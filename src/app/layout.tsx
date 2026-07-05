@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import ThemeProvider from "@/components/ThemeProvider";
 
 export const metadata: Metadata = {
   title: "Siqi Xu — AI Product Portfolio",
@@ -13,7 +12,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning className="bg-stone-50 dark:bg-stone-950">
       <head>
         <script dangerouslySetInnerHTML={{ __html: `
           try {
@@ -24,7 +23,7 @@ export default function RootLayout({
         `}} />
       </head>
       <body className="bg-stone-50 dark:bg-stone-950 text-slate-800 dark:text-stone-100 font-sans antialiased">
-        <ThemeProvider>{children}</ThemeProvider>
+        {children}
       </body>
     </html>
   );

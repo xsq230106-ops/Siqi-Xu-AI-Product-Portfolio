@@ -58,7 +58,7 @@ export default function HomePage({ locale }: { locale: Locale }) {
     obj ? obj[locale] ?? "" : "";
 
   return (
-    <div className="min-h-screen flex flex-col bg-stone-50 text-slate-800 font-sans antialiased">
+    <div className="min-h-screen flex flex-col bg-stone-50 dark:bg-stone-950 text-slate-800 dark:text-stone-100 font-sans antialiased">
       {/* Top bar */}
       <header className="flex items-center justify-between px-4 lg:px-6 py-2 bg-white dark:bg-stone-900 border-b border-slate-200 dark:border-stone-700 shrink-0">
         <span className="text-sm font-medium text-slate-700 dark:text-stone-300">
