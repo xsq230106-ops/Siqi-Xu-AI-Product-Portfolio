@@ -2,7 +2,6 @@ name: Daily Hotspot Update
 
 on:
   schedule:
-    # 每天早上 8:00 (UTC+8 = UTC 00:00)
     - cron: '0 0,12 * * *'
   workflow_dispatch:
 
@@ -10,23 +9,25 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
-      - name: Setup Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.11'
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.11' }
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '20'
+      - uses: actions/setup-node@v4
+        with: { node-version: '20' }
 
-      - name: Install dependencies
-        run: npm ci
+      - run: npm ci
+
+      - name: Validate DeepSeek API key
+        run: |
+          if [ -z "${{ secrets.DEEPSEEK_API_KEY }}" ]; then
+            echo "::warning::DEEPSEEK_API_KEY secret not configured. Hotspot pipeline will be skipped."
+            echo "Add it at: Settings → Secrets and variables → Actions → New repository secret"
+          fi
 
       - name: Run hotspot pipeline
+        if: ${{ secrets.DEEPSEEK_API_KEY != '' }}
         run: python scripts/build_hotspots.py --limit 4
         env:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}

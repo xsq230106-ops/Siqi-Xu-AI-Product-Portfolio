@@ -359,8 +359,8 @@ def main() -> None:
 
     api_key = os.environ.get("DEEPSEEK_API_KEY")
     if not api_key:
-        log.error("DEEPSEEK_API_KEY not set. Run: export DEEPSEEK_API_KEY='sk-...'")
-        sys.exit(1)
+        log.error("DEEPSEEK_API_KEY not set. Add it as a GitHub Secret: Settings → Secrets and variables → Actions")
+        sys.exit(2)
 
     # ── Step 1: Fetch ──
     log.info("Step 1/4: Fetching articles from RSS sources")
