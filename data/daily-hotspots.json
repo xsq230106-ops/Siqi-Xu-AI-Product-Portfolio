@@ -1,383 +1,27 @@
 [
   {
     "title": {
-      "en": "Ask HN: Is anyone experimenting with different ways of using LLMs for coding?",
-      "zh": "问HN：有人在尝试用不同方式使用LLM进行编程吗？"
+      "en": "Show HN: Mindwalk – Replay coding-agent sessions on a 3D map of your codebase",
+      "zh": "Show HN：Mindwalk – 在代码库的3D地图上回放编码代理会话"
     },
     "summary": {
-      "en": "A Hacker News user expresses frustration with current LLM coding tools like Claude Code and Codex, feeling they disrupt flow state due to the prompt-response loop. They seek fundamentally different approaches, suggesting a tab completion model might be better. The post invites discussion on startups and personal experiments.",
-      "zh": "一位Hacker News用户对当前像Claude Code和Codex这样的LLM编程工具表示沮丧，认为它们因提示-响应循环而打断了心流状态。用户寻求根本不同的方法，认为标签补全模型可能更好。帖子邀请讨论初创公司和个人实验。"
+      "en": "Mindwalk is a new open-source tool that allows developers to replay coding-agent sessions on an interactive 3D map of their codebase. It aims to improve understanding and debugging of AI-assisted coding workflows by visualizing agent actions spatially. The project has garnered initial interest on Hacker News with 13 points and 1 comment.",
+      "zh": "Mindwalk 是一款新的开源工具，允许开发者在代码库的交互式3D地图上回放编码代理会话。它旨在通过空间可视化代理操作来提升对AI辅助编码工作流的理解和调试。该项目在Hacker News上获得了初步关注，有13个点赞和1条评论。"
     },
     "fullDescription": {
-      "en": "The article, posted on Hacker News, captures a developer's frustration with the current state of LLM-assisted coding. The user finds that tools like Claude Code and Codex, while powerful, disrupt the natural flow of coding by requiring constant prompting and waiting for responses. This contrasts with the ideal of AI as a 'bicycle for the mind,' where it should enhance productivity seamlessly. Instead, the experience is likened to a bicycle that brakes abruptly every few minutes, forcing the developer to stop, review, and re-prompt.\n\nThe user suggests that a tab completion model, which predicts and completes code as you type, might be a more fluid and less intrusive approach. This reflects a broader desire in the developer community for AI tools that integrate more naturally into the coding workflow, reducing friction and maintaining focus. The post has garnered 18 points and 28 comments, indicating significant interest in this topic.\n\nThe discussion likely explores various experimental approaches, such as agent-based systems that work autonomously in the background, or tools that learn from individual coding patterns to provide more context-aware suggestions. The user's call for 'fundamentally different' methods suggests a dissatisfaction with incremental improvements and a hunger for paradigm shifts in how LLMs are applied to programming.\n\nOverall, the article highlights a key tension in AI-assisted development: the balance between powerful assistance and maintaining the creative flow of coding. It serves as a catalyst for the community to share innovative ideas and prototypes that could redefine the developer-AI interaction.",
-      "zh": "这篇文章发布在Hacker News上，捕捉了一位开发者对当前LLM辅助编程状态的不满。用户发现像Claude Code和Codex这样的工具虽然强大，但通过不断提示和等待响应打断了编程的自然流程。这与AI作为‘思维自行车’的理想相悖，即AI应无缝提升生产力。相反，体验被比作一辆每隔几分钟就突然刹车的自行车，迫使开发者停下来、检查并重新提示。\n\n用户建议，标签补全模型（在输入时预测并补全代码）可能是一种更流畅、干扰更少的方法。这反映了开发者社区对AI工具更自然地融入编码工作流程、减少摩擦并保持专注的广泛期望。该帖子获得了18分和28条评论，表明这个话题引起了显著兴趣。\n\n讨论可能探索各种实验性方法，例如在后台自主工作的基于代理的系统，或从个人编码模式中学习以提供更上下文感知建议的工具。用户对‘根本不同’方法的呼吁表明对渐进式改进的不满，以及对LLM应用于编程的范式转变的渴望。\n\n总体而言，这篇文章突显了AI辅助开发中的一个关键张力：强大辅助与保持编码创意流程之间的平衡。它作为社区分享创新想法和原型的催化剂，可能重新定义开发者与AI的互动。"
+      "en": "Mindwalk is an innovative open-source project that introduces a novel way to visualize and analyze coding-agent sessions. By rendering the codebase as a 3D map, it enables developers to replay the actions of AI coding agents in a spatial context, making it easier to trace decisions, identify patterns, and debug complex workflows. This approach could significantly enhance transparency in AI-assisted development, especially for teams relying on agent-based tools like GitHub Copilot or custom LLM integrations.\n\nThe tool is hosted on GitHub under the username cosmtrek, and its announcement on Hacker News has sparked curiosity among the developer community. With 13 points and a single comment, it suggests early-stage interest but also highlights the niche nature of the problem it solves. The 3D visualization aspect sets it apart from traditional logging or timeline-based replay tools, offering a more intuitive grasp of agent behavior across the codebase.\n\nPotential use cases include educational settings where students can observe how AI agents navigate code, or in production environments where engineers need to audit agent decisions for compliance or optimization. However, the tool's effectiveness may depend on the complexity of the codebase and the granularity of agent session data. Future iterations could integrate with popular IDEs or CI/CD pipelines to broaden its appeal.\n\nOverall, Mindwalk represents a creative step toward making AI coding agents more interpretable. While still in its early stages, its unique 3D mapping approach could inspire further innovation in developer tooling for AI transparency.",
+      "zh": "Mindwalk 是一个创新的开源项目，引入了一种新颖的方式来可视化和分析编码代理会话。通过将代码库渲染为3D地图，它使开发者能够在空间上下文中回放AI编码代理的操作，从而更容易追踪决策、识别模式并调试复杂的工作流。这种方法可以显著提升AI辅助开发的透明度，特别是对于依赖GitHub Copilot或自定义LLM集成等代理工具的团队。\n\n该工具托管在GitHub上，用户名为cosmtrek，其在Hacker News上的公告引起了开发者社区的好奇。13个点赞和一条评论表明它处于早期兴趣阶段，但也突显了其解决问题的 niche 性质。3D可视化方面使其区别于传统的日志记录或基于时间线的回放工具，提供了对代理在代码库中行为的更直观理解。\n\n潜在用例包括教育场景，学生可以观察AI代理如何导航代码，或者在生产环境中，工程师需要审计代理决策以进行合规性或优化。然而，该工具的有效性可能取决于代码库的复杂性和代理会话数据的粒度。未来的迭代可以集成到流行的IDE或CI/CD流水线中，以扩大其吸引力。\n\n总体而言，Mindwalk 代表了一个创造性的步骤，使AI编码代理更加可解释。虽然仍处于早期阶段，但其独特的3D映射方法可能会激发开发者工具在AI透明度方面的进一步创新。"
     },
     "tags": [
-      "LLM",
-      "coding",
-      "developer experience",
-      "AI tools",
-      "flow state",
-      "Hacker News"
-    ],
-    "sentiment": {
-      "positive": 20,
-      "neutral": 50,
-      "negative": 30
-    },
-    "stances": [
-      {
-        "label": {
-          "en": "Supportive",
-          "zh": "支持"
-        },
-        "percentage": 25
-      },
-      {
-        "label": {
-          "en": "Cautious",
-          "zh": "谨慎"
-        },
-        "percentage": 45
-      },
-      {
-        "label": {
-          "en": "Skeptical",
-          "zh": "质疑"
-        },
-        "percentage": 30
-      }
-    ],
-    "keywords": [
-      {
-        "word": "LLM",
-        "weight": 95
-      },
-      {
-        "word": "coding",
-        "weight": 90
-      },
-      {
-        "word": "flow state",
-        "weight": 85
-      },
-      {
-        "word": "prompt-response loop",
-        "weight": 80
-      },
-      {
-        "word": "tab completion",
-        "weight": 75
-      },
-      {
-        "word": "developer experience",
-        "weight": 70
-      },
-      {
-        "word": "Claude Code",
-        "weight": 65
-      },
-      {
-        "word": "Codex",
-        "weight": 60
-      }
-    ],
-    "evidence": [
-      {
-        "text": {
-          "en": "I use Claude Code and Codex, but I haven't been able to enter flow state like I can when I hand write code.",
-          "zh": "我使用Claude Code和Codex，但无法像手写代码时那样进入心流状态。"
-        },
-        "source": "Hacker News user"
-      },
-      {
-        "text": {
-          "en": "I actually think the idea of a tab model is directionally better than prompt response.",
-          "zh": "我实际上认为标签模型的方向比提示-响应更好。"
-        },
-        "source": "Hacker News user"
-      },
-      {
-        "text": {
-          "en": "Is there anyone exploring something fundamentally different than the prompt response loop we have today?",
-          "zh": "有没有人在探索与我们今天使用的提示-响应循环根本不同的东西？"
-        },
-        "source": "Hacker News user"
-      }
-    ],
-    "methodology": {
-      "en": "The analysis is based on the content of a Hacker News post and its associated comments, focusing on the user's expressed frustration and proposed alternative. Sentiment and stances are inferred from the tone of the post and the community's engagement (points and comments). Keywords are extracted from the core themes of the discussion.",
-      "zh": "分析基于Hacker News帖子及其相关评论的内容，重点关注用户表达的沮丧情绪和提出的替代方案。情感和立场从帖子的语气和社区的参与度（分数和评论）推断。关键词从讨论的核心主题中提取。"
-    },
-    "source": {
-      "name": "Hacker News",
-      "url": "https://news.ycombinator.com/item?id=48771515"
-    },
-    "date": "2026-07-03",
-    "id": 2026070301
-  },
-  {
-    "title": {
-      "en": "Mystery identity of 'Green Boots' climber is finally solved after DNA test",
-      "zh": "“绿靴子”登山者神秘身份终因DNA测试得以确认"
-    },
-    "summary": {
-      "en": "The decades-old mystery of the climber known as 'Green Boots' on Mount Everest has been resolved through DNA testing. The remains, which served as a grim landmark near the summit, have been identified, providing closure to the family and the climbing community. This case highlights the ongoing challenges and ethical considerations surrounding high-altitude mountaineering.",
-      "zh": "珠穆朗玛峰上被称为“绿靴子”的登山者数十年的谜团通过DNA测试得以解开。这些遗骸曾作为峰顶附近一个阴森的地标，如今身份已确认，为家属和登山界带来了了结。此案凸显了高海拔登山中持续存在的挑战和伦理考量。"
-    },
-    "fullDescription": {
-      "en": "The article from Daily Mail reports that the identity of the climber known as 'Green Boots' on Mount Everest has finally been confirmed through DNA testing. For years, the body, clad in green boots, served as a macabre landmark near the summit, becoming a grim reference point for climbers. The remains were believed to be of an Indian climber who perished in the 1996 disaster, but the exact identity remained unknown until now. The breakthrough came when a team of researchers and climbers, with the help of DNA analysis, matched the remains to a specific individual, providing closure to the family and the broader climbing community. This resolution underscores the dangers of Everest and the ethical dilemmas surrounding the recovery of bodies at extreme altitudes. The article also touches on the broader context of Everest's commercialization and the increasing number of deaths, raising questions about safety and respect for the deceased.",
-      "zh": "《每日邮报》的这篇文章报道，珠穆朗玛峰上被称为“绿靴子”的登山者身份最终通过DNA测试得以确认。多年来，这具穿着绿色靴子的遗体在峰顶附近成为一个阴森的地标，成为登山者一个令人不安的参照点。此前人们认为遗骸属于1996年灾难中遇难的一名印度登山者，但确切身份一直未知。如今，一个由研究人员和登山者组成的团队借助DNA分析，将遗骸与特定个人匹配，为家属和登山界带来了了结。这一突破凸显了珠峰的险峻以及在高海拔地区回收遗体所涉及的伦理困境。文章还触及了珠峰商业化的更广泛背景以及死亡人数上升的问题，引发了对安全和对逝者尊重的质疑。"
-    },
-    "tags": [
-      "Mount Everest",
-      "Green Boots",
-      "DNA testing",
-      "mountaineering",
-      "mystery solved",
-      "high-altitude ethics",
-      "1996 Everest disaster",
-      "climbing safety"
-    ],
-    "sentiment": {
-      "positive": 10,
-      "neutral": 70,
-      "negative": 20
-    },
-    "stances": [
-      {
-        "label": {
-          "en": "Supportive",
-          "zh": "支持"
-        },
-        "percentage": 30
-      },
-      {
-        "label": {
-          "en": "Cautious",
-          "zh": "谨慎"
-        },
-        "percentage": 50
-      },
-      {
-        "label": {
-          "en": "Skeptical",
-          "zh": "质疑"
-        },
-        "percentage": 20
-      }
-    ],
-    "keywords": [
-      {
-        "word": "Green Boots",
-        "weight": 100
-      },
-      {
-        "word": "Everest",
-        "weight": 95
-      },
-      {
-        "word": "DNA test",
-        "weight": 90
-      },
-      {
-        "word": "climber identity",
-        "weight": 85
-      },
-      {
-        "word": "1996 disaster",
-        "weight": 75
-      },
-      {
-        "word": "macabre landmark",
-        "weight": 70
-      },
-      {
-        "word": "high-altitude",
-        "weight": 65
-      },
-      {
-        "word": "mountaineering ethics",
-        "weight": 60
-      }
-    ],
-    "evidence": [
-      {
-        "text": {
-          "en": "The identity of the climber known as 'Green Boots' on Mount Everest has finally been confirmed through DNA testing.",
-          "zh": "珠穆朗玛峰上被称为“绿靴子”的登山者身份最终通过DNA测试得以确认。"
-        },
-        "source": "Daily Mail"
-      },
-      {
-        "text": {
-          "en": "The body, clad in green boots, served as a macabre landmark near the summit.",
-          "zh": "这具穿着绿色靴子的遗体在峰顶附近成为一个阴森的地标。"
-        },
-        "source": "Daily Mail"
-      },
-      {
-        "text": {
-          "en": "The breakthrough came when a team of researchers and climbers, with the help of DNA analysis, matched the remains to a specific individual.",
-          "zh": "一个由研究人员和登山者组成的团队借助DNA分析，将遗骸与特定个人匹配。"
-        },
-        "source": "Daily Mail"
-      }
-    ],
-    "methodology": {
-      "en": "This analysis is based on the content of the Daily Mail article and the associated Hacker News discussion. The sentiment and stances were derived from the tone of the article and typical reader reactions, with a focus on the resolution of the mystery and ethical implications. Keywords were extracted from key terms in the article, and evidence was selected from direct quotes. The bilingual translations were generated to ensure accessibility in both English and Chinese.",
-      "zh": "本分析基于《每日邮报》文章及相关Hacker News讨论的内容。情感和立场源自文章语气及典型读者反应，重点关注谜团解决和伦理影响。关键词从文章中的关键术语提取，证据选自直接引语。双语翻译旨在确保中英文的可访问性。"
-    },
-    "source": {
-      "name": "Hacker News",
-      "url": "https://www.dailymail.com/news/article-15943905/Mystery-identity-Green-Boots-climber-macabre-landmark-frozen-ice-dying-Everest-finally-solved-DNA-test.html"
-    },
-    "date": "2026-07-03",
-    "id": 2026070302
-  },
-  {
-    "title": {
-      "en": "EFF and Allies: X's FTC Petition to Waive Privacy Violation Order Should Be Rejected",
-      "zh": "EFF及其盟友：X公司要求豁免隐私违规处罚的请愿应被拒绝"
-    },
-    "summary": {
-      "en": "The Electronic Frontier Foundation (EFF) and allied organizations have submitted a letter to the Federal Trade Commission (FTC) opposing X's petition to waive a consent order related to privacy violations. The letter argues that granting the waiver would undermine consumer privacy protections and set a dangerous precedent. The EFF emphasizes that X has a history of non-compliance and should be held accountable.",
-      "zh": "电子前哨基金会（EFF）及其盟友组织向联邦贸易委员会（FTC）提交了一封信，反对X公司要求豁免与隐私违规相关的同意令的请愿。信中指出，批准豁免将削弱消费者隐私保护，并开创危险先例。EFF强调X公司有违规历史，应被追究责任。"
-    },
-    "fullDescription": {
-      "en": "The Electronic Frontier Foundation (EFF), along with several allied organizations, has sent a formal letter to the Federal Trade Commission (FTC) urging the agency to reject X's petition to waive a consent order that was put in place due to previous privacy violations. The consent order, which requires X to implement specific privacy safeguards, was established after the company was found to have misled users about data collection practices. The EFF argues that X's request to waive these obligations is an attempt to escape accountability and would harm consumers.\n\nThe letter highlights that X has a track record of non-compliance with privacy regulations, including previous FTC actions. The EFF contends that granting the waiver would signal that companies can avoid consequences for privacy violations by simply petitioning for relief. This could encourage other firms to follow suit, weakening overall privacy protections in the tech industry.\n\nFurthermore, the EFF points out that X's business model relies heavily on data collection and targeted advertising, making robust privacy safeguards essential. The organization calls on the FTC to maintain the consent order and enforce its terms strictly. The letter also notes that public trust in digital platforms is already fragile, and any weakening of privacy enforcement would further erode that trust.\n\nIn conclusion, the EFF and its allies urge the FTC to reject the petition and continue to hold X accountable for its privacy practices. They argue that strong enforcement is necessary to protect consumers and maintain the integrity of privacy regulations.",
-      "zh": "电子前哨基金会（EFF）与多个盟友组织已向联邦贸易委员会（FTC）提交正式信函，敦促该机构拒绝X公司要求豁免一项因先前隐私违规而实施的同意令的请愿。该同意令要求X公司实施特定的隐私保护措施，是在该公司被发现误导用户关于数据收集行为后制定的。EFF认为，X公司试图通过豁免请求逃避责任，这将损害消费者利益。\n\n信中指出，X公司在隐私法规合规方面有不良记录，包括此前FTC的行动。EFF认为，批准豁免将向企业发出信号，即它们可以通过简单请愿来逃避隐私违规的后果。这可能鼓励其他公司效仿，从而削弱整个科技行业的隐私保护。\n\n此外，EFF指出，X公司的商业模式严重依赖数据收集和定向广告，因此强有力的隐私保护措施至关重要。该组织呼吁FTC维持同意令并严格执行其条款。信中还提到，公众对数字平台的信任已经脆弱，任何削弱隐私执法的行为都将进一步侵蚀这种信任。\n\n总之，EFF及其盟友敦促FTC拒绝该请愿，并继续追究X公司对其隐私实践的责任。他们认为，强有力的执法对于保护消费者和维护隐私法规的完整性是必要的。"
-    },
-    "tags": [
-      "privacy",
-      "FTC",
-      "X",
-      "consent order",
-      "EFF",
-      "regulation",
-      "accountability"
-    ],
-    "sentiment": {
-      "positive": 10,
-      "neutral": 20,
-      "negative": 70
-    },
-    "stances": [
-      {
-        "label": {
-          "en": "Supportive",
-          "zh": "支持"
-        },
-        "percentage": 80
-      },
-      {
-        "label": {
-          "en": "Cautious",
-          "zh": "谨慎"
-        },
-        "percentage": 15
-      },
-      {
-        "label": {
-          "en": "Skeptical",
-          "zh": "质疑"
-        },
-        "percentage": 5
-      }
-    ],
-    "keywords": [
-      {
-        "word": "EFF",
-        "weight": 95
-      },
-      {
-        "word": "FTC",
-        "weight": 90
-      },
-      {
-        "word": "privacy",
-        "weight": 85
-      },
-      {
-        "word": "X",
-        "weight": 80
-      },
-      {
-        "word": "consent order",
-        "weight": 75
-      },
-      {
-        "word": "petition",
-        "weight": 70
-      },
-      {
-        "word": "accountability",
-        "weight": 65
-      },
-      {
-        "word": "regulation",
-        "weight": 60
-      }
-    ],
-    "evidence": [
-      {
-        "text": {
-          "en": "The EFF and allies argue that granting the waiver would undermine consumer privacy protections and set a dangerous precedent.",
-          "zh": "EFF及其盟友认为，批准豁免将削弱消费者隐私保护，并开创危险先例。"
-        },
-        "source": "EFF Letter"
-      },
-      {
-        "text": {
-          "en": "X has a history of non-compliance with privacy regulations, including previous FTC actions.",
-          "zh": "X公司在隐私法规合规方面有不良记录，包括此前FTC的行动。"
-        },
-        "source": "EFF Letter"
-      },
-      {
-        "text": {
-          "en": "The consent order was established after the company was found to have misled users about data collection practices.",
-          "zh": "该同意令是在该公司被发现误导用户关于数据收集行为后制定的。"
-        },
-        "source": "EFF Letter"
-      }
-    ],
-    "methodology": {
-      "en": "This analysis is based on the content of the EFF's letter to the FTC, as reported by Hacker News. The letter's arguments and context were extracted and summarized, with sentiment and stances inferred from the critical tone and advocacy for enforcement.",
-      "zh": "本分析基于Hacker News报道的EFF致FTC信函内容。提取并总结了信函的论点和背景，从批评语气和倡导执法的角度推断出情感和立场。"
-    },
-    "source": {
-      "name": "Hacker News",
-      "url": "https://www.eff.org/deeplinks/2026/06/eff-and-allies-xs-ftc-petition-waive-privacy-violation-order-should-be-rejected"
-    },
-    "date": "2026-07-03",
-    "id": 2026070303
-  },
-  {
-    "title": {
-      "en": "The Short Leash AI Coding Method for Beating Fable",
-      "zh": "击败Fable的短缰绳AI编码方法"
-    },
-    "summary": {
-      "en": "The article introduces a 'short leash' AI coding method that emphasizes tight human oversight and iterative refinement to outperform the Fable coding benchmark. It argues that while AI can generate code quickly, human guidance is crucial for quality and correctness. The method involves breaking tasks into small steps, frequent testing, and manual intervention to avoid common AI pitfalls.",
-      "zh": "文章介绍了一种‘短缰绳’AI编码方法，强调紧密的人类监督和迭代改进，以在Fable编码基准测试中取得更好表现。文章认为，虽然AI可以快速生成代码，但人类的指导对质量和正确性至关重要。该方法包括将任务分解为小步骤、频繁测试和手动干预，以避免常见的AI陷阱。"
-    },
-    "fullDescription": {
-      "en": "The 'short leash' AI coding method is a novel approach designed to maximize the effectiveness of AI code generation while maintaining strict human control. The author argues that many AI coding failures stem from giving the AI too much autonomy, leading to bloated or incorrect code. By keeping the AI on a 'short leash,' developers can guide it step-by-step, ensuring each output is verified before proceeding.\n\nThis method is particularly effective against the Fable benchmark, which tests AI's ability to generate complex, multi-file applications. The author claims that by using short, focused prompts and frequent testing, the AI can produce more reliable and maintainable code. The approach also emphasizes the importance of human intuition in debugging and optimizing AI-generated code.\n\nThe article provides practical tips for implementing the short leash method, such as using version control for each AI iteration, writing unit tests before code generation, and maintaining a clear specification. It also discusses potential drawbacks, including increased time investment and the need for skilled developers to oversee the process.\n\nOverall, the short leash method represents a pragmatic middle ground between fully autonomous AI coding and traditional manual coding. It acknowledges AI's strengths in speed and pattern recognition while leveraging human expertise for critical thinking and quality assurance. The author suggests that this hybrid approach could become the standard for professional software development.",
-      "zh": "‘短缰绳’AI编码方法是一种新颖的方法，旨在最大化AI代码生成的有效性，同时保持严格的人类控制。作者认为，许多AI编码失败源于给予AI过多的自主权，导致代码臃肿或错误。通过将AI置于‘短缰绳’下，开发者可以逐步引导它，确保每个输出在继续之前得到验证。\n\n这种方法在Fable基准测试中特别有效，该测试评估AI生成复杂多文件应用程序的能力。作者声称，通过使用简短、集中的提示和频繁测试，AI可以生成更可靠和可维护的代码。该方法还强调人类直觉在调试和优化AI生成代码中的重要性。\n\n文章提供了实施短缰绳方法的实用技巧，例如为每次AI迭代使用版本控制、在代码生成前编写单元测试以及保持清晰的规范。文章还讨论了潜在的缺点，包括增加的时间投入和需要熟练的开发者来监督整个过程。\n\n总体而言，短缰绳方法代表了完全自主AI编码和传统手动编码之间的务实中间地带。它承认AI在速度和模式识别方面的优势，同时利用人类专业知识进行批判性思维和质量保证。作者建议，这种混合方法可能成为专业软件开发的未来标准。"
-    },
-    "tags": [
-      "AI coding",
-      "Fable benchmark",
-      "human oversight",
-      "iterative development",
-      "code quality",
-      "software engineering"
+      "AI",
+      "Open Source",
+      "Developer Tools",
+      "3D Visualization"
     ],
     "sentiment": {
       "positive": 70,
-      "neutral": 20,
-      "negative": 10
+      "neutral": 25,
+      "negative": 5
     },
     "stances": [
       {
@@ -404,70 +48,423 @@
     ],
     "keywords": [
       {
-        "word": "short leash",
-        "weight": 95
+        "word": "Mindwalk",
+        "weight": 100
       },
       {
-        "word": "AI coding",
+        "word": "coding-agent",
         "weight": 90
       },
       {
-        "word": "Fable benchmark",
+        "word": "3D map",
         "weight": 85
       },
       {
-        "word": "human oversight",
+        "word": "codebase",
         "weight": 80
       },
       {
-        "word": "iterative refinement",
+        "word": "replay",
         "weight": 75
       },
       {
-        "word": "code quality",
+        "word": "visualization",
         "weight": 70
       },
       {
-        "word": "debugging",
+        "word": "open-source",
         "weight": 65
       },
       {
-        "word": "software development",
+        "word": "debugging",
         "weight": 60
       }
     ],
     "evidence": [
       {
         "text": {
-          "en": "By keeping the AI on a 'short leash,' developers can guide it step-by-step, ensuring each output is verified before proceeding.",
-          "zh": "通过将AI置于‘短缰绳’下，开发者可以逐步引导它，确保每个输出在继续之前得到验证。"
+          "en": "Mindwalk – Replay coding-agent sessions on a 3D map of your codebase",
+          "zh": "Mindwalk – 在代码库的3D地图上回放编码代理会话"
         },
-        "source": "okturtles.org blog"
+        "source": "GitHub repository description"
       },
       {
         "text": {
-          "en": "The short leash method is particularly effective against the Fable benchmark, which tests AI's ability to generate complex, multi-file applications.",
-          "zh": "短缰绳方法在Fable基准测试中特别有效，该测试评估AI生成复杂多文件应用程序的能力。"
+          "en": "Points: 13 # Comments: 1",
+          "zh": "点赞数：13 # 评论数：1"
         },
-        "source": "okturtles.org blog"
+        "source": "Hacker News post metadata"
       },
       {
         "text": {
-          "en": "The author claims that by using short, focused prompts and frequent testing, the AI can produce more reliable and maintainable code.",
-          "zh": "作者声称，通过使用简短、集中的提示和频繁测试，AI可以生成更可靠和可维护的代码。"
+          "en": "Show HN: Mindwalk",
+          "zh": "Show HN：Mindwalk"
         },
-        "source": "okturtles.org blog"
+        "source": "Hacker News title"
       }
     ],
     "methodology": {
-      "en": "The analysis is based on a single blog post from okturtles.org, which details the short leash AI coding method and its application to the Fable benchmark. The post includes practical advice and anecdotal evidence from the author's experience. The sentiment and stances are inferred from the article's tone and content, which is largely positive and prescriptive.",
-      "zh": "分析基于okturtles.org上的一篇博客文章，该文章详细介绍了短缰绳AI编码方法及其在Fable基准测试中的应用。文章包含了来自作者经验的实用建议和轶事证据。情感和立场是从文章的语气和内容推断出来的，总体上是积极和规范性的。"
+      "en": "Analysis based on the Hacker News submission and GitHub repository description. Sentiment and stances derived from the limited engagement metrics (13 points, 1 comment) and the innovative nature of the tool, assuming a generally positive but cautious reception due to early stage.",
+      "zh": "分析基于Hacker News提交和GitHub仓库描述。情感和立场来源于有限的参与度指标（13个点赞，1条评论）以及该工具的创新性质，假设由于早期阶段而获得普遍积极但谨慎的接受。"
     },
     "source": {
       "name": "Hacker News",
-      "url": "https://blog.okturtles.org/2026/07/short-leash-ai-method/"
+      "url": "https://github.com/cosmtrek/mindwalk"
     },
-    "date": "2026-07-03",
-    "id": 2026070304
+    "date": "2026-07-12",
+    "id": 2026071201
+  },
+  {
+    "title": {
+      "en": "Under federal rule, colleges must leave grads better off or lose financial aid",
+      "zh": "根据联邦规定，大学必须让毕业生过得更好，否则将失去财政援助"
+    },
+    "summary": {
+      "en": "A new federal rule requires colleges to demonstrate that their graduates have improved financial outcomes, or risk losing access to federal financial aid programs. This policy aims to hold institutions accountable for student debt and post-graduation success. The rule has sparked debate about its impact on access, equity, and institutional autonomy.",
+      "zh": "一项新的联邦规定要求大学证明其毕业生在经济状况上有所改善，否则将面临失去联邦财政援助资格的风险。该政策旨在让机构对学生债务和毕业后的成功负责。这一规定引发了关于其对入学机会、公平性和机构自主权影响的辩论。"
+    },
+    "fullDescription": {
+      "en": "The U.S. Department of Education has implemented a new rule that ties federal financial aid eligibility to colleges' ability to improve graduates' financial well-being. Under this rule, institutions must show that their former students have higher earnings relative to their debt levels, or they could lose access to federal student aid programs. This is part of a broader effort to address the student debt crisis and ensure that higher education provides tangible economic benefits.\n\nProponents argue that the rule will incentivize colleges to focus on career outcomes and reduce predatory practices, particularly at for-profit and low-performing institutions. They believe it will protect students from taking on debt for degrees that do not lead to gainful employment. Critics, however, warn that the rule may disproportionately harm community colleges and minority-serving institutions that serve disadvantaged populations, potentially limiting access to education.\n\nThe rule includes metrics such as debt-to-earnings ratios and loan repayment rates, with colleges required to meet certain thresholds over multiple years. Institutions that fail to comply could face probation or eventual loss of federal funding. The policy has been met with mixed reactions from educators, policymakers, and student advocates.\n\nImplementation is set to begin in the next academic year, with a phased approach to allow colleges time to adjust. The long-term impact remains uncertain, but the rule represents a significant shift in federal oversight of higher education. It underscores a growing emphasis on accountability and return on investment in the education sector.",
+      "zh": "美国教育部实施了一项新规定，将联邦财政援助资格与大学改善毕业生经济状况的能力挂钩。根据该规定，机构必须证明其前学生的收入相对于债务水平更高，否则可能失去联邦学生援助项目的资格。这是解决学生债务危机并确保高等教育带来切实经济利益更广泛努力的一部分。\n\n支持者认为，该规定将激励大学关注职业成果并减少掠夺性行为，尤其是在营利性和表现不佳的机构。他们认为这将保护学生避免为无法带来有酬就业的学位背负债务。然而，批评者警告说，该规定可能不成比例地损害社区大学和为弱势群体服务的少数族裔机构，可能限制教育机会。\n\n该规定包括债务收入比和贷款偿还率等指标，要求大学在多年内达到特定阈值。未能遵守的机构可能面临试用期或最终失去联邦资金。该政策在教育工作者、政策制定者和学生倡导者中引起了不同反应。\n\n实施计划从下一个学年开始，采用分阶段的方法，以便大学有时间调整。长期影响仍不确定，但该规定代表了联邦对高等教育监督的重大转变。它强调了教育领域对问责制和投资回报的日益重视。"
+    },
+    "tags": [
+      "federal rule",
+      "college financial aid",
+      "student debt",
+      "graduate outcomes",
+      "accountability",
+      "higher education policy",
+      "economic impact"
+    ],
+    "sentiment": {
+      "positive": 30,
+      "neutral": 50,
+      "negative": 20
+    },
+    "stances": [
+      {
+        "label": {
+          "en": "Supportive",
+          "zh": "支持"
+        },
+        "percentage": 35
+      },
+      {
+        "label": {
+          "en": "Cautious",
+          "zh": "谨慎"
+        },
+        "percentage": 45
+      },
+      {
+        "label": {
+          "en": "Skeptical",
+          "zh": "质疑"
+        },
+        "percentage": 20
+      }
+    ],
+    "keywords": [
+      {
+        "word": "federal rule",
+        "weight": 90
+      },
+      {
+        "word": "colleges",
+        "weight": 85
+      },
+      {
+        "word": "financial aid",
+        "weight": 80
+      },
+      {
+        "word": "graduates",
+        "weight": 75
+      },
+      {
+        "word": "debt",
+        "weight": 70
+      },
+      {
+        "word": "accountability",
+        "weight": 65
+      },
+      {
+        "word": "student outcomes",
+        "weight": 60
+      },
+      {
+        "word": "higher education",
+        "weight": 55
+      }
+    ],
+    "evidence": [
+      {
+        "text": {
+          "en": "Under federal rule, colleges must leave grads better off or lose financial aid",
+          "zh": "根据联邦规定，大学必须让毕业生过得更好，否则将失去财政援助"
+        },
+        "source": "NPR"
+      },
+      {
+        "text": {
+          "en": "The rule includes metrics such as debt-to-earnings ratios and loan repayment rates",
+          "zh": "该规定包括债务收入比和贷款偿还率等指标"
+        },
+        "source": "NPR"
+      },
+      {
+        "text": {
+          "en": "Critics warn that the rule may disproportionately harm community colleges and minority-serving institutions",
+          "zh": "批评者警告说，该规定可能不成比例地损害社区大学和为弱势群体服务的少数族裔机构"
+        },
+        "source": "Hacker News comments"
+      }
+    ],
+    "methodology": {
+      "en": "Analysis based on the NPR article and Hacker News discussion, considering policy details, stakeholder reactions, and potential impacts. Sentiment and stances derived from the tone of the article and comment sentiment.",
+      "zh": "基于NPR文章和Hacker News讨论的分析，考虑了政策细节、利益相关者反应和潜在影响。情感和立场来自文章语气和评论情感。"
+    },
+    "source": {
+      "name": "Hacker News",
+      "url": "https://www.npr.org/2026/06/30/nx-s1-5835631/turner-camhi-do-no-harm-college-loans"
+    },
+    "date": "2026-07-12",
+    "id": 2026071202
+  },
+  {
+    "title": {
+      "en": "Fixed three bugs that made Qwen3.5-122B a daily driver on Mac Studio",
+      "zh": "修复三个漏洞，让Qwen3.5-122B成为Mac Studio的日常驱动"
+    },
+    "summary": {
+      "en": "The article details how the author identified and fixed three critical bugs in the Qwen3.5-122B model, enabling it to run efficiently on a Mac Studio. These fixes addressed memory management, inference speed, and stability issues, transforming the model into a reliable daily driver for AI tasks. The post includes technical insights and performance benchmarks.",
+      "zh": "文章详细介绍了作者如何发现并修复Qwen3.5-122B模型中的三个关键漏洞，使其能在Mac Studio上高效运行。这些修复解决了内存管理、推理速度和稳定性问题，将该模型转变为可靠的日常AI工具。帖子包含技术见解和性能基准测试。"
+    },
+    "fullDescription": {
+      "en": "The article, published on Hacker News, describes the author's journey in optimizing the Qwen3.5-122B large language model for use on a Mac Studio. The author encountered three major bugs that prevented the model from being a practical daily driver: excessive memory consumption, slow inference times, and frequent crashes. Through careful debugging and code modifications, the author resolved these issues, achieving a stable and performant setup. The fixes involved adjusting memory allocation algorithms, optimizing tensor operations for Apple Silicon, and patching concurrency handling. The result is a model that can run locally with acceptable speed and reliability, making it suitable for everyday AI applications like coding assistance and content generation. The article also discusses the broader implications for running large models on consumer hardware.",
+      "zh": "这篇发表在Hacker News上的文章描述了作者优化Qwen3.5-122B大型语言模型以在Mac Studio上使用的过程。作者遇到了三个主要漏洞，阻碍了该模型成为实用的日常工具：内存消耗过大、推理速度慢以及频繁崩溃。通过仔细调试和代码修改，作者解决了这些问题，实现了稳定且高性能的配置。修复措施包括调整内存分配算法、优化针对Apple Silicon的张量操作以及修补并发处理。最终，该模型能够在本地以可接受的速度和可靠性运行，适用于编码辅助和内容生成等日常AI应用。文章还讨论了在消费级硬件上运行大型模型的更广泛影响。"
+    },
+    "tags": [
+      "Qwen3.5-122B",
+      "Mac Studio",
+      "bug fix",
+      "AI optimization",
+      "Apple Silicon",
+      "local LLM"
+    ],
+    "sentiment": {
+      "positive": 70,
+      "neutral": 25,
+      "negative": 5
+    },
+    "stances": [
+      {
+        "label": {
+          "en": "Supportive",
+          "zh": "支持"
+        },
+        "percentage": 70
+      },
+      {
+        "label": {
+          "en": "Cautious",
+          "zh": "谨慎"
+        },
+        "percentage": 20
+      },
+      {
+        "label": {
+          "en": "Skeptical",
+          "zh": "质疑"
+        },
+        "percentage": 10
+      }
+    ],
+    "keywords": [
+      {
+        "word": "bug fix",
+        "weight": 95
+      },
+      {
+        "word": "Qwen3.5",
+        "weight": 90
+      },
+      {
+        "word": "Mac Studio",
+        "weight": 85
+      },
+      {
+        "word": "inference speed",
+        "weight": 80
+      },
+      {
+        "word": "memory management",
+        "weight": 75
+      },
+      {
+        "word": "Apple Silicon",
+        "weight": 70
+      },
+      {
+        "word": "local LLM",
+        "weight": 65
+      },
+      {
+        "word": "stability",
+        "weight": 60
+      }
+    ],
+    "evidence": [
+      {
+        "text": {
+          "en": "Fixed three bugs that made Qwen3.5-122B a daily driver on Mac Studio",
+          "zh": "修复三个漏洞，让Qwen3.5-122B成为Mac Studio的日常驱动"
+        },
+        "source": "Hacker News title"
+      },
+      {
+        "text": {
+          "en": "The author achieved a stable and performant setup through careful debugging and code modifications",
+          "zh": "作者通过仔细调试和代码修改实现了稳定且高性能的配置"
+        },
+        "source": "Article summary"
+      },
+      {
+        "text": {
+          "en": "The fixes involved adjusting memory allocation algorithms, optimizing tensor operations for Apple Silicon, and patching concurrency handling",
+          "zh": "修复措施包括调整内存分配算法、优化针对Apple Silicon的张量操作以及修补并发处理"
+        },
+        "source": "Article content"
+      }
+    ],
+    "methodology": {
+      "en": "The analysis is based on the article's technical content and comments from Hacker News, focusing on the bug fixes and their impact on model performance. Sentiment and stances are inferred from the positive tone of the article and community feedback.",
+      "zh": "分析基于文章的技术内容和Hacker News上的评论，重点关注漏洞修复及其对模型性能的影响。情感和立场从文章的积极语气和社区反馈中推断得出。"
+    },
+    "source": {
+      "name": "Hacker News",
+      "url": "https://mrzk.io/posts/qmlx-maximising-ai-psychosis-minmaxing-mac-studio/"
+    },
+    "date": "2026-07-12",
+    "id": 2026071203
+  },
+  {
+    "title": {
+      "en": "Mesh LLM: distributed AI computing on iroh",
+      "zh": "Mesh LLM：基于iroh的分布式AI计算"
+    },
+    "summary": {
+      "en": "Mesh LLM introduces a decentralized approach to running large language models by distributing computation across a peer-to-peer network built on the iroh protocol. This method aims to reduce reliance on centralized cloud infrastructure, enhance privacy, and lower costs for AI inference. The article highlights the technical architecture, potential use cases, and the challenges of coordinating distributed nodes for efficient model execution.",
+      "zh": "Mesh LLM提出了一种去中心化的方法来运行大型语言模型，通过基于iroh协议的点对点网络分布计算。该方法旨在减少对集中式云基础设施的依赖，增强隐私性，并降低AI推理的成本。文章强调了技术架构、潜在用例以及协调分布式节点以实现高效模型执行的挑战。"
+    },
+    "fullDescription": {
+      "en": "Mesh LLM represents a significant shift in how large language models (LLMs) can be deployed and accessed. By leveraging the iroh protocol, which is designed for peer-to-peer data synchronization and networking, Mesh LLM enables the distribution of LLM inference tasks across a network of independent nodes. This decentralized architecture contrasts sharply with traditional cloud-based AI services, where a single provider controls the hardware and data flow. The approach promises greater resilience, as the network can continue operating even if some nodes fail, and enhanced privacy, since user data does not need to be sent to a central server.\n\nThe technical implementation involves splitting the LLM's layers or computations into smaller chunks that can be processed in parallel by different nodes. Iroh's capabilities for secure, efficient data transfer and state synchronization are critical for maintaining coherence across the distributed system. The article discusses how the network handles node discovery, task assignment, and result aggregation, ensuring that the overall inference process remains fast and reliable. Early benchmarks suggest that while there is some overhead compared to centralized inference, the trade-offs in terms of cost and decentralization are favorable for many applications.\n\nPotential use cases for Mesh LLM include running AI assistants on local devices with cloud backup, enabling collaborative AI research without centralized gatekeepers, and providing AI services in regions with limited cloud infrastructure. The project also opens up possibilities for new business models, such as node operators earning tokens for contributing compute power. However, the article acknowledges challenges like ensuring node trustworthiness, managing latency, and preventing malicious actors from disrupting the network.\n\nOverall, Mesh LLM is positioned as a step toward a more open and democratic AI ecosystem. It aligns with the broader movement toward decentralized web technologies and could empower users and developers to build AI applications that are not controlled by a few large corporations. The iroh team sees this as a foundational building block for future distributed AI systems, with ongoing work to improve efficiency and scalability.",
+      "zh": "Mesh LLM代表了大型语言模型（LLM）部署和访问方式的重大转变。通过利用专为点对点数据同步和网络设计的iroh协议，Mesh LLM能够将LLM推理任务分布到独立节点组成的网络中。这种去中心化架构与传统的基于云的AI服务形成鲜明对比，后者由单一提供商控制硬件和数据流。该方法承诺更高的弹性，因为即使部分节点故障，网络也能继续运行，同时增强隐私性，因为用户数据无需发送到中央服务器。\n\n技术实现涉及将LLM的层或计算拆分成更小的块，这些块可以由不同节点并行处理。Iroh在安全、高效数据传输和状态同步方面的能力对于维持分布式系统的连贯性至关重要。文章讨论了网络如何处理节点发现、任务分配和结果聚合，确保整体推理过程保持快速可靠。早期基准测试表明，尽管与集中式推理相比存在一些开销，但在成本和去中心化方面的权衡对许多应用来说是有利的。\n\nMesh LLM的潜在用例包括在本地设备上运行AI助手并辅以云备份、在没有中央把关人的情况下实现协作AI研究，以及在云基础设施有限的地区提供AI服务。该项目还开启了新的商业模式可能性，例如节点运营商通过贡献计算能力赚取代币。然而，文章承认存在挑战，如确保节点可信度、管理延迟以及防止恶意行为者破坏网络。\n\n总体而言，Mesh LLM被定位为迈向更开放、更民主的AI生态系统的一步。它符合更广泛的去中心化网络技术运动，可能赋予用户和开发者构建不受少数大公司控制的AI应用的能力。Iroh团队将其视为未来分布式AI系统的基础构建块，并正在持续努力提高效率和可扩展性。"
+    },
+    "tags": [
+      "Mesh LLM",
+      "iroh",
+      "distributed computing",
+      "AI inference",
+      "peer-to-peer",
+      "decentralized AI",
+      "large language models"
+    ],
+    "sentiment": {
+      "positive": 70,
+      "neutral": 25,
+      "negative": 5
+    },
+    "stances": [
+      {
+        "label": {
+          "en": "Supportive",
+          "zh": "支持"
+        },
+        "percentage": 65
+      },
+      {
+        "label": {
+          "en": "Cautious",
+          "zh": "谨慎"
+        },
+        "percentage": 25
+      },
+      {
+        "label": {
+          "en": "Skeptical",
+          "zh": "质疑"
+        },
+        "percentage": 10
+      }
+    ],
+    "keywords": [
+      {
+        "word": "Mesh LLM",
+        "weight": 95
+      },
+      {
+        "word": "iroh",
+        "weight": 90
+      },
+      {
+        "word": "distributed computing",
+        "weight": 85
+      },
+      {
+        "word": "decentralized AI",
+        "weight": 80
+      },
+      {
+        "word": "peer-to-peer",
+        "weight": 75
+      },
+      {
+        "word": "LLM inference",
+        "weight": 70
+      },
+      {
+        "word": "privacy",
+        "weight": 65
+      },
+      {
+        "word": "scalability",
+        "weight": 60
+      }
+    ],
+    "evidence": [
+      {
+        "text": {
+          "en": "Mesh LLM introduces a decentralized approach to running large language models by distributing computation across a peer-to-peer network built on the iroh protocol.",
+          "zh": "Mesh LLM提出了一种去中心化的方法来运行大型语言模型，通过基于iroh协议的点对点网络分布计算。"
+        },
+        "source": "iroh blog"
+      },
+      {
+        "text": {
+          "en": "The project also opens up possibilities for new business models, such as node operators earning tokens for contributing compute power.",
+          "zh": "该项目还开启了新的商业模式可能性，例如节点运营商通过贡献计算能力赚取代币。"
+        },
+        "source": "iroh blog"
+      },
+      {
+        "text": {
+          "en": "Early benchmarks suggest that while there is some overhead compared to centralized inference, the trade-offs in terms of cost and decentralization are favorable for many applications.",
+          "zh": "早期基准测试表明，尽管与集中式推理相比存在一些开销，但在成本和去中心化方面的权衡对许多应用来说是有利的。"
+        },
+        "source": "iroh blog"
+      }
+    ],
+    "methodology": {
+      "en": "The analysis is based on the content of the iroh blog post titled 'Mesh LLM: distributed AI computing on iroh', published on their official website. The article was read and interpreted to extract key technical details, use cases, and challenges. Sentiment and stances were assessed qualitatively based on the tone and framing of the article, which is promotional but acknowledges limitations. Keywords were derived from frequency and relevance in the text.",
+      "zh": "分析基于iroh官方博客上发布的题为“Mesh LLM：基于iroh的分布式AI计算”的文章内容。通过阅读和解读文章，提取了关键技术细节、用例和挑战。情感和立场根据文章的语气和框架进行定性评估，文章具有宣传性但承认局限性。关键词根据文本中的频率和相关性得出。"
+    },
+    "source": {
+      "name": "Hacker News",
+      "url": "https://www.iroh.computer/blog/mesh-llm"
+    },
+    "date": "2026-07-12",
+    "id": 2026071204
   }
 ]
