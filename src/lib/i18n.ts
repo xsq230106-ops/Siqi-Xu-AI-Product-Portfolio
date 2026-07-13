@@ -22,8 +22,8 @@ const en: Record<string, string> = {
   "back_to_list": "Back to list",
   "resume": "Resume",
   "contact_note": "Open to full-time and internship opportunities.",
-  "footer_note": "Static demo data — analysis is illustrative, not from live sources",
-  "footer_list": "Static demo — no live data or API connections"
+  "footer_note": "Daily analysis powered by DeepSeek AI — data from RSS news feeds",
+  "footer_list": "Updated daily via automated pipeline (RSS + DeepSeek analysis)"
 };
 
 const zh: Record<string, string> = {
@@ -46,8 +46,8 @@ const zh: Record<string, string> = {
   "back_to_list": "返回列表",
   "resume": "履历",
   "contact_note": "对全职与实习机会均持开放态度。",
-  "footer_note": "静态演示数据 — 分析仅供示意，并非来自实时来源",
-  "footer_list": "静态演示 — 无实时数据或 API 连接"
+  "footer_note": "每日更新 — 基于 DeepSeek AI 分析，数据来源 RSS 新闻",
+  "footer_list": "每天自动更新（RSS 抓取 + DeepSeek 分析）"
 };
 
 const locales = { en, zh } as const;

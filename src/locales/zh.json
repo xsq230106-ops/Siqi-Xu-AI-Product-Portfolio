@@ -18,6 +18,6 @@
   "back_to_list": "返回列表",
   "resume": "履历",
   "contact_note": "对全职与实习机会均持开放态度。",
-  "footer_note": "静态演示数据 — 分析仅供示意，并非来自实时来源",
-  "footer_list": "静态演示 — 无实时数据或 API 连接"
+  "footer_note": "每日更新 — 基于 DeepSeek AI 分析，数据来源 RSS 新闻",
+  "footer_list": "每天自动更新（RSS 抓取 + DeepSeek 分析）"
 }

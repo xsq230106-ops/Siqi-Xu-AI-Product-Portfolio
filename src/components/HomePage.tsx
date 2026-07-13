@@ -94,7 +94,7 @@ export default function HomePage({ locale }: { locale: Locale }) {
       <div className="lg:hidden border-b border-slate-200 dark:border-stone-700 bg-white dark:bg-stone-900 px-4 py-3">
         <div className="flex items-center gap-3">
           <div className="w-10 h-10 overflow-hidden shrink-0 bg-slate-100">
-            <img src="/avatar.jpg" alt="Siqi Xu" className="w-full h-full object-cover object-top" />
+            <img src="avatar.jpg" alt="Siqi Xu" className="w-full h-full object-cover object-top" />
           </div>
           <div className="flex-1 min-w-0">
             <p className="text-sm font-medium text-slate-900 truncate">

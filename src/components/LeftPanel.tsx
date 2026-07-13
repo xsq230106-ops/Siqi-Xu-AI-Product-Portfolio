@@ -22,7 +22,7 @@ export default function LeftPanel({ locale, isExpanded, onDragStart }: Props) {
         {/* Compact profile rail */}
         <div className="flex flex-col items-center lg:items-start gap-4">
           <div className="w-20 h-20 overflow-hidden shrink-0 bg-slate-100">
-            <img src="/avatar.jpg" alt="Siqi Xu" className="w-full h-full object-cover object-top" />
+            <img src="avatar.jpg" alt="Siqi Xu" className="w-full h-full object-cover object-top" />
           </div>
           <div className="text-center lg:text-left">
             <h1 className="text-xl font-semibold text-slate-900 dark:text-stone-100">{R(data.name)}</h1>
