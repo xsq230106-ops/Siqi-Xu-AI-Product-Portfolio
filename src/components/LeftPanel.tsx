@@ -2,7 +2,6 @@
 
 import { t, type Locale } from "@/i18n/dictionary";
 import resumeData from "../../resume-data.json";
-import Image from "next/image";
 
 const data = resumeData as any;
 
@@ -23,7 +22,7 @@ export default function LeftPanel({ locale, isExpanded, onDragStart }: Props) {
         {/* Compact profile rail */}
         <div className="flex flex-col items-center lg:items-start gap-4">
           <div className="w-20 h-20 overflow-hidden shrink-0 bg-slate-100">
-            <Image src="/avatar.jpg" alt="Siqi Xu" width={80} height={80} className="w-full h-full object-cover object-top" />
+            <img src="./avatar.jpg" alt="Siqi Xu" className="w-full h-full object-cover object-top" />
           </div>
           <div className="text-center lg:text-left">
             <h1 className="text-xl font-semibold text-slate-900 dark:text-stone-100">{R(data.name)}</h1>
@@ -181,14 +180,18 @@ export default function LeftPanel({ locale, isExpanded, onDragStart }: Props) {
 
       {/* Drag handle */}
       <div
-      <div
         className="absolute right-0 top-0 bottom-0 w-5 cursor-col-resize z-10 flex flex-col items-center justify-center group hover:bg-blue-50/50 dark:hover:bg-blue-950/30 transition-colors"
         onMouseDown={onDragStart}
         title="Drag to resize"
       >
-        <div className="flex flex-col items-center gap-[3px]">
-          {[1,2,3,4,5].map(i => (
-            <div key={i} className="w-[3px] h-[3px] rounded-full bg-slate-300 dark:bg-stone-600 group-hover:bg-blue-400 dark:group-hover:bg-blue-400 transition-colors" />
-          ))}
+        <div className="flex flex-col items-center gap-0.5">
+          <div className="w-1 h-1 rounded-full bg-slate-300 dark:bg-stone-600 group-hover:bg-blue-400 dark:group-hover:bg-blue-400 transition-colors" />
+          <div className="w-1 h-1 rounded-full bg-slate-300 dark:bg-stone-600 group-hover:bg-blue-400 dark:group-hover:bg-blue-400 transition-colors" />
+          <div className="w-1 h-1 rounded-full bg-slate-300 dark:bg-stone-600 group-hover:bg-blue-400 dark:group-hover:bg-blue-400 transition-colors" />
+          <div className="w-1 h-1 rounded-full bg-slate-300 dark:bg-stone-600 group-hover:bg-blue-400 dark:group-hover:bg-blue-400 transition-colors" />
+          <div className="w-1 h-1 rounded-full bg-slate-300 dark:bg-stone-600 group-hover:bg-blue-400 dark:group-hover:bg-blue-400 transition-colors" />
         </div>
       </div>
+      </div>
+  );
+}

@@ -8,7 +8,6 @@ import ThemeToggle from "@/components/ThemeToggle";
 import LeftPanel from "@/components/LeftPanel";
 import RightPanel from "@/components/RightPanel";
 import resumeData from "../../resume-data.json";
-import Image from "next/image";
 
 const SNAP = [320, 520, 760] as const;
 const MIN_W = 320;
@@ -95,7 +94,7 @@ export default function HomePage({ locale }: { locale: Locale }) {
       <div className="lg:hidden border-b border-slate-200 dark:border-stone-700 bg-white dark:bg-stone-900 px-4 py-3">
         <div className="flex items-center gap-3">
           <div className="w-10 h-10 overflow-hidden shrink-0 bg-slate-100">
-            <Image src="/avatar.jpg" alt="Siqi Xu" width={40} height={40} className="w-full h-full object-cover object-top" />
+            <img src="./avatar.jpg" alt="Siqi Xu" className="w-full h-full object-cover object-top" />
           </div>
           <div className="flex-1 min-w-0">
             <p className="text-sm font-medium text-slate-900 truncate">
