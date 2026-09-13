@@ -54,6 +54,9 @@ __pycache__/
 # —— Test coverage ——
 coverage/
 
+# —— Data pipeline backups ——
+data/*.bak
+
 # —— Misc temp ——
 .cache/
 tmp/
