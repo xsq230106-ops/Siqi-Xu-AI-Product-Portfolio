@@ -17,7 +17,8 @@ export default function LeftPanel({ locale, isExpanded, onDragStart }: Props) {
   const T = (key: string) => t(key, locale);
 
   return (
-    <div className="h-full bg-white dark:bg-stone-900 border-r border-slate-200 dark:border-stone-700 overflow-y-auto relative">
+    <div className="h-full bg-white dark:bg-stone-900 border-r border-slate-200 dark:border-stone-700 relative overflow-hidden">
+      <div className="h-full overflow-y-auto">
       <div className="p-6 lg:p-8">
         {/* Compact profile rail */}
         <div className="flex flex-col items-center lg:items-start gap-4">
@@ -46,7 +47,7 @@ export default function LeftPanel({ locale, isExpanded, onDragStart }: Props) {
             {data.skills.map((s: any) => (
               <span
                 key={s.key}
-                className="inline-block px-2.5 py-1 text-xs font-medium bg-slate-100 dark:bg-stone-800 text-slate-700 dark:text-stone-300 dark:text-stone-300 rounded-md"
+                className="inline-block px-2.5 py-1 text-xs font-medium bg-slate-100 dark:bg-stone-800 text-slate-700 dark:text-stone-300 rounded-md"
               >
                 {R(s.label)}
               </span>
@@ -177,10 +178,11 @@ export default function LeftPanel({ locale, isExpanded, onDragStart }: Props) {
           </>
         )}
       </div>
+      </div>
 
       {/* Drag handle */}
       <div
-        className="absolute right-0 top-0 bottom-0 w-5 cursor-col-resize z-10 flex flex-col items-center justify-center group hover:bg-blue-50/50 dark:hover:bg-blue-950/30 transition-colors"
+        className="absolute right-1 top-1/2 -translate-y-1/2 z-10 cursor-col-resize rounded-full px-1.5 py-2 group hover:bg-blue-50 dark:hover:bg-blue-950/50 transition-colors"
         onMouseDown={onDragStart}
         title="Drag to resize"
       >

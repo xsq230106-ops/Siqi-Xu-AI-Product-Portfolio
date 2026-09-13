@@ -58,7 +58,7 @@ export default function HomePage({ locale }: { locale: Locale }) {
     obj ? obj[locale] ?? "" : "";
 
   return (
-    <div className="min-h-screen flex flex-col bg-stone-50 dark:bg-stone-950 text-slate-800 dark:text-stone-100 font-sans antialiased">
+    <div className="min-h-screen lg:h-screen lg:overflow-hidden flex flex-col bg-stone-50 dark:bg-stone-950 text-slate-800 dark:text-stone-100 font-sans antialiased">
       {/* Top bar */}
       <header className="flex items-center justify-between px-4 lg:px-6 py-2 bg-white dark:bg-stone-900 border-b border-slate-200 dark:border-stone-700 shrink-0">
         <span className="text-sm font-medium text-slate-700 dark:text-stone-300">
@@ -70,10 +70,10 @@ export default function HomePage({ locale }: { locale: Locale }) {
         </div>
       </header>
 
-      <div className="flex flex-1 flex-col lg:flex-row">
+      <div className="flex flex-1 flex-col lg:flex-row lg:min-h-0">
         {/* Left Panel — desktop only */}
         <div
-          className="hidden lg:block relative shrink-0"
+          className="hidden lg:block relative shrink-0 lg:h-full"
           style={{
             width: `${leftWidth}px`,
             transition: isDragging ? "none" : "width 0.2s ease",
