@@ -1,0 +1,166 @@
+[
+  {
+    "id": 1,
+    "title": {
+      "en": "Apple Intelligence Goes Public",
+      "zh": "Apple Intelligence 正式上线"
+    },
+    "summary": {
+      "en": "Apple rolls out its on-device AI suite with privacy-first LLM inference, integrated across iOS, iPadOS, and macOS.",
+      "zh": "Apple 正式推出设备端 AI 套件，以隐私优先的大模型推理为核心，覆盖 iOS、iPadOS 与 macOS。"
+    },
+    "fullDescription": {
+      "en": "Apple has officially launched its Apple Intelligence suite, marking a significant milestone in consumer AI. The on-device architecture prioritizes user privacy while delivering LLM-powered features across writing tools, image generation, and Siri enhancements. Unlike cloud-dependent competitors, Apple's approach keeps data processing locally on the device, setting a new standard for privacy-conscious AI deployment. The rollout covers iOS 19, iPadOS 19, and macOS 16, with developer APIs available for third-party integration.",
+      "zh": "Apple 正式发布了 Apple Intelligence 套件，标志着消费级 AI 的重要里程碑。其设备端架构在优先保障用户隐私的同时，提供写作工具、图像生成和 Siri 增强等 LLM 功能。与依赖云端的竞品不同，Apple 将数据处理保留在本地设备上，为注重隐私的 AI 部署设立了新标准。该发布覆盖 iOS 19、iPadOS 19 和 macOS 16，同时向第三方开发者开放 API。"
+    },
+    "date": "2026-06-28",
+    "tags": ["Apple", "On-Device AI", "Privacy"],
+    "source": { "name": "Apple Newsroom", "url": "" },
+    "sentiment": { "positive": 72, "neutral": 22, "negative": 6 },
+    "stances": [
+      { "label": { "en": "Supportive", "zh": "支持" }, "percentage": 58 },
+      { "label": { "en": "Cautious", "zh": "谨慎" }, "percentage": 28 },
+      { "label": { "en": "Skeptical", "zh": "质疑" }, "percentage": 14 }
+    ],
+    "keywords": [
+      { "word": "Apple Intelligence", "weight": 95 },
+      { "word": "On-Device AI", "weight": 88 },
+      { "word": "Privacy", "weight": 82 },
+      { "word": "LLM", "weight": 75 },
+      { "word": "iOS 19", "weight": 65 },
+      { "word": "Edge Computing", "weight": 60 }
+    ],
+    "evidence": [
+      { "text": { "en": "Apple emphasizes that 'AI processing happens entirely on-device, ensuring user data never leaves your iPhone.'", "zh": "Apple 强调'AI 处理完全在设备端进行，确保用户数据永远不会离开你的 iPhone。'" }, "source": "Apple Keynote" },
+      { "text": { "en": "Early benchmarks show on-device LLM inference achieving sub-100ms response times for text generation tasks.", "zh": "早期基准测试显示，设备端 LLM 推理在文本生成任务中实现了低于 100 毫秒的响应时间。" }, "source": "TechCrunch" },
+      { "text": { "en": "Developer interest in the new AI APIs has been described as 'unprecedented' by Apple VP of Software Engineering.", "zh": "Apple 软件工程副总裁称开发者对新 AI API 的兴趣'前所未有'。" }, "source": "Bloomberg" }
+    ],
+    "methodology": {
+      "en": "Analysis based on 200+ news articles, press releases, and social media posts collected 24 hours post-announcement. Sentiment classified using a fine-tuned BERT model. Stance detection performed via multi-label classification with cross-referencing against expert commentary. Keywords extracted using TF-IDF weighted against a general news corpus.",
+      "zh": "分析基于发布后 24 小时内收集的 200+ 篇新闻文章、新闻稿和社交媒体帖子。情绪分类使用微调后的 BERT 模型。立场检测通过多标签分类完成，并与专家评论进行交叉验证。关键词提取使用 TF-IDF 加权并与通用新闻语料进行对比。"
+    }
+  },
+  {
+    "id": 2,
+    "title": {
+      "en": "GPT-5 Agent API Reaches General Availability",
+      "zh": "GPT-5 Agent API 正式开放商用"
+    },
+    "summary": {
+      "en": "OpenAI's agentic API enters GA, enabling developers to deploy autonomous multi-step reasoning agents with tool use, memory, and safety guardrails.",
+      "zh": "OpenAI 的 Agent API 进入正式商用阶段，开发者可部署具备工具调用、记忆能力和安全护栏的自主多步推理智能体。"
+    },
+    "fullDescription": {
+      "en": "OpenAI has announced the general availability of its GPT-5 Agent API, a pivotal development in the AI agent ecosystem. The API enables developers to build autonomous agents capable of multi-step reasoning, external tool integration, persistent memory, and configurable safety guardrails. Early adopters report significant productivity gains in workflow automation, customer support, and code generation. OpenAI has also released reference implementations for common agent patterns including retrieval-augmented generation, multi-agent collaboration, and human-in-the-loop approval flows.",
+      "zh": "OpenAI 宣布其 GPT-5 Agent API 正式商用，这是 AI 智能体生态的关键进展。该 API 使开发者能够构建具备多步推理、外部工具集成、持久记忆和可配置安全护栏的自主智能体。早期采用者报告在工作流自动化、客户支持和代码生成方面取得了显著效率提升。OpenAI 还发布了常见智能体模式的参考实现，包括检索增强生成、多智能体协作和人机协同审批流程。"
+    },
+    "date": "2026-06-25",
+    "tags": ["OpenAI", "Agent", "API"],
+    "source": { "name": "OpenAI Blog", "url": "" },
+    "sentiment": { "positive": 68, "neutral": 25, "negative": 7 },
+    "stances": [
+      { "label": { "en": "Supportive", "zh": "支持" }, "percentage": 62 },
+      { "label": { "en": "Cautious", "zh": "谨慎" }, "percentage": 22 },
+      { "label": { "en": "Skeptical", "zh": "质疑" }, "percentage": 16 }
+    ],
+    "keywords": [
+      { "word": "GPT-5", "weight": 96 },
+      { "word": "Agent API", "weight": 90 },
+      { "word": "Autonomous Agents", "weight": 84 },
+      { "word": "Multi-Step Reasoning", "weight": 72 },
+      { "word": "Tool Use", "weight": 68 },
+      { "word": "Safety Guardrails", "weight": 62 }
+    ],
+    "evidence": [
+      { "text": { "en": "Enterprise beta customers report an average 40% reduction in workflow completion time using GPT-5 agents.", "zh": "企业版 beta 用户报告使用 GPT-5 智能体后，工作流完成时间平均减少 40%。" }, "source": "OpenAI Case Studies" },
+      { "text": { "en": "The API pricing starts at $0.15 per agent invocation, with volume discounts for enterprise customers.", "zh": "API 定价为每次智能体调用 $0.15，企业客户可享受批量折扣。" }, "source": "OpenAI Pricing Page" },
+      { "text": { "en": "Safety researchers have raised concerns about the difficulty of reliably constraining autonomous agent behavior in open-ended environments.", "zh": "安全研究人员对在开放环境中可靠约束自主智能体行为的难度表示担忧。" }, "source": "AI Safety Institute" }
+    ],
+    "methodology": {
+      "en": "Aggregated from 150+ sources including official OpenAI documentation, developer forums (Reddit, Hacker News), enterprise feedback reports, and independent benchmark evaluations. Sentiment analysis performed using GPT-5 as the classifier with human validation on a 10% sample. Stance categories defined based on the target audience segment (developer vs policymaker vs enterprise buyer).",
+      "zh": "汇总自 150+ 来源，包括 OpenAI 官方文档、开发者论坛（Reddit、Hacker News）、企业反馈报告和独立基准评测。情绪分析使用 GPT-5 作为分类器，并在 10% 样本上进行人工验证。立场类别根据目标受众群体（开发者 vs 政策制定者 vs 企业采购者）定义。"
+    }
+  },
+  {
+    "id": 3,
+    "title": {
+      "en": "EU AI Act Enforcement Begins",
+      "zh": "欧盟 AI 法案正式生效"
+    },
+    "summary": {
+      "en": "The first wave of EU AI Act regulations comes into effect, requiring transparency and risk management for high-risk AI systems across all member states.",
+      "zh": "欧盟 AI 法案首批监管条款正式实施，要求所有成员国对高风险 AI 系统进行透明度与风险管理。"
+    },
+    "fullDescription": {
+      "en": "The European Union's AI Act has entered its first enforcement phase, targeting high-risk AI systems deployed in critical infrastructure, education, employment, and law enforcement. Companies must now conduct conformity assessments, maintain human oversight mechanisms, and provide transparency documentation. Non-compliance can result in fines up to 7% of global annual turnover. The regulation is expected to influence AI governance frameworks globally, with several countries monitoring the EU's implementation as a potential model for their own legislation.",
+      "zh": "欧盟 AI 法案进入首批执行阶段，针对部署在关键基础设施、教育、就业和执法等领域的高风险 AI 系统。企业现在必须进行合规评估、保持人工监督机制并提供透明度文档。不合规可能面临高达全球年营业额 7% 的罚款。该法规预计将影响全球 AI 治理框架，多个国家正在关注欧盟的实施情况作为其立法的潜在参考。"
+    },
+    "date": "2026-06-20",
+    "tags": ["Regulation", "EU", "Compliance"],
+    "source": { "name": "European Commission", "url": "" },
+    "sentiment": { "positive": 45, "neutral": 35, "negative": 20 },
+    "stances": [
+      { "label": { "en": "Supportive", "zh": "支持" }, "percentage": 40 },
+      { "label": { "en": "Neutral", "zh": "中立" }, "percentage": 33 },
+      { "label": { "en": "Critical", "zh": "批评" }, "percentage": 27 }
+    ],
+    "keywords": [
+      { "word": "EU AI Act", "weight": 98 },
+      { "word": "Regulation", "weight": 88 },
+      { "word": "High-Risk AI", "weight": 80 },
+      { "word": "Compliance", "weight": 74 },
+      { "word": "Fines", "weight": 65 },
+      { "word": "Governance", "weight": 58 }
+    ],
+    "evidence": [
+      { "text": { "en": "At least 30 major tech companies have already established dedicated AI compliance teams in response to the Act.", "zh": "至少 30 家主要科技公司已为此专门设立 AI 合规团队。" }, "source": "Financial Times" },
+      { "text": { "en": "SME advocacy groups argue that compliance costs disproportionately burden smaller AI developers.", "zh": "中小企业倡导组织认为合规成本对小型 AI 开发者的负担不成比例。" }, "source": "SME United" },
+      { "text": { "en": "The European Commission has published a 120-page compliance guideline document, available in all 24 official EU languages.", "zh": "欧盟委员会已发布 120 页的合规指南文件，提供所有 24 种欧盟官方语言版本。" }, "source": "European Commission" }
+    ],
+    "methodology": {
+      "en": "Analysis based on 180+ sources including regulatory text analysis, legal commentary, corporate announcements, and NGO position papers. Stance detection incorporates a regulatory-specific taxonomy (proactive compliance vs cautious adaptation vs active opposition). Sentiment calibrated against the expected impact timeline, noting that full enforcement is phased through 2027.",
+      "zh": "分析基于 180+ 来源，包括监管文本分析、法律评论、企业公告和非政府组织立场文件。立场检测采用面向监管的分类体系（主动合规 vs 谨慎适应 vs 积极反对）。情绪根据预期影响时间线进行校准，注意到全面执法将分阶段推进至 2027 年。"
+    }
+  },
+  {
+    "id": 4,
+    "title": {
+      "en": "Multimodal Models Hit New Benchmark Highs",
+      "zh": "多模态模型刷新多项基准纪录"
+    },
+    "summary": {
+      "en": "Google Gemini 3.0 and Anthropic Claude 4 achieve state-of-the-art results across vision, audio, and reasoning benchmarks, blurring the line between modalities.",
+      "zh": "Google Gemini 3.0 与 Anthropic Claude 4 在视觉、音频与推理基准测试中均取得最佳结果，模态之间的边界日益模糊。"
+    },
+    "fullDescription": {
+      "en": "A new wave of multimodal AI models has set record-breaking performance across major benchmarks. Google's Gemini 3.0 achieved the highest MMMU score to date, while Anthropic's Claude 4 demonstrated near-human performance on complex visual reasoning tasks. The models show particular strength in cross-modal transfer — applying knowledge learned from text to improve image understanding, and vice versa. This convergence is driving rapid advances in applications ranging from medical imaging to autonomous navigation, though researchers caution that benchmark scores do not always translate to real-world reliability.",
+      "zh": "新一波多模态 AI 模型在主要基准测试中取得了创纪录的性能。Google 的 Gemini 3.0 获得了迄今最高的 MMMU 得分，而 Anthropic 的 Claude 4 在复杂视觉推理任务中展示了接近人类的表现。这些模型在跨模态迁移方面表现尤为突出——将从文本中学习到的知识应用于改进图像理解，反之亦然。这种融合正在推动从医学影像到自主导航等领域的快速进步，不过研究人员提醒基准分数并不总能转化为实际可靠性。"
+    },
+    "date": "2026-06-18",
+    "tags": ["Multimodal", "Benchmark", "Gemini", "Claude"],
+    "source": { "name": "Multiple sources", "url": "" },
+    "sentiment": { "positive": 78, "neutral": 17, "negative": 5 },
+    "stances": [
+      { "label": { "en": "Excited", "zh": "兴奋" }, "percentage": 55 },
+      { "label": { "en": "Measured", "zh": "谨慎" }, "percentage": 30 },
+      { "label": { "en": "Skeptical", "zh": "质疑" }, "percentage": 15 }
+    ],
+    "keywords": [
+      { "word": "Multimodal AI", "weight": 92 },
+      { "word": "Gemini 3.0", "weight": 88 },
+      { "word": "Claude 4", "weight": 85 },
+      { "word": "MMMU Benchmark", "weight": 72 },
+      { "word": "Visual Reasoning", "weight": 68 },
+      { "word": "Cross-Modal Transfer", "weight": 62 }
+    ],
+    "evidence": [
+      { "text": { "en": "Gemini 3.0 scored 92.4% on MMMU, surpassing the previous SOTA by 4.7 percentage points.", "zh": "Gemini 3.0 在 MMMU 上得分 92.4%，超过此前最优水平 4.7 个百分点。" }, "source": "Google AI Blog" },
+      { "text": { "en": "Claude 4 achieved 89% accuracy on a novel visual reasoning test specifically designed to resist memorization.", "zh": "Claude 4 在一个专门为抵抗记忆化设计的新型视觉推理测试中达到 89% 准确率。" }, "source": "Anthropic Research" },
+      { "text": { "en": "Industry analysts note that benchmark improvements are accelerating, with the gap between top models narrowing to under 3% on most standard evaluations.", "zh": "行业分析师指出基准提升正在加速，大多数标准评估中顶级模型之间的差距缩小至 3% 以内。" }, "source": "State of AI Report" }
+    ],
+    "methodology": {
+      "en": "Benchmark performance aggregated from official model cards, third-party evaluation reports (Stanford CRFM, Hugging Face Open LLM Leaderboard), and academic pre-prints. Sentiment reflects the research community's response on arXiv, Twitter/X, and academic mailing lists. Keyword weighting combines TF-IDF with citation count from the analysis period.",
+      "zh": "基准性能汇总自官方模型卡、第三方评估报告（Stanford CRFM、Hugging Face Open LLM Leaderboard）和学术预印本。情绪反映了研究社区在 arXiv、Twitter/X 和学术邮件列表上的反应。关键词加权结合了 TF-IDF 和分析期内的引用计数。"
+    }
+  }
+]
